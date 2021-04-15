@@ -18,40 +18,69 @@
   </head>
   <body>
     <nav>
-      <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
-      <div>
-        <a href="index.html">Projects</a>
-        <a href="about.html">About</a>
+      <div class="nav-left">
+        <a href="about.html">HELEN KHOR</a>
+      </div>
+      <div class="nav-center">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">PROJECTS</a>
+        <a href="about.html">ABOUT</a>
       </div>
     </nav>
-    <header>
-      <div class="hero">
-        <div>
-          <h1>Hello! I'm Helen Khor</h1>
-          <h2>I am not just a developer</h2>
+    <hr />
+    <article class="project">
+      <div class="project-description">
+        <a href="project-astra.html"><h1>ASTRA</h1></a>
+        <hr class="underline" />
+        <p>2021</p>
+        <div class="tags">
+          <a href="project-astra.html#branding"><button class="tag background-colour-branding">Branding</button></a>
+          <a href="project-astra.html#stationery"><button class="tag background-colour-stationery">Stationery</button></a>
+          <a href="project-astra.html#website"><button class="tag background-colour-website">Website</button></a>
         </div>
       </div>
-    </header>
-    <main class="home">
-      <div class="project">
-        <a href="project-astra.html"
-          ><img src="images/astra/astra-website.png" alt="astra's website"
-        /></a>
-        <div class="project-details">
-          <a href="project-astra.html"><h3>Astra</h3></a>
-          <div class="tags">
-            <a href="project-astra.html#branding"
-              ><button class="tag">Branding</button></a
-            >
-            <a href="project-astra.html#stationery"
-              ><button class="tag">Stationery</button></a
-            >
-            <a href="project-astra.html#website"
-              ><button class="tag">Website</button></a
-            >
+      <div class="project-container">
+        <div class="project-container-item background-colour-branding"><a href="project-astra.html#branding"><img src="images/astra/astra-branding.png" alt="astra's branding" /></a></div>
+        <div class="project-container-item background-colour-stationery"><a href="project-astra.html#stationery"><img src="images/astra/astra-stationery.png" alt="astra's business stationery" /></a></div>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-description">
+        <h1>GAMES</h1>
+        <hr class="underline" />
+        <p>Development of interactive games</p>
+      </div>
+      <div class="project-container">
+        <div class="project-container-item background-colour-default">
+          <img src="images/games/coin-toss-heads.png" alt="head of a Peter Rabbit 50p coin">
+          <div class="project-container-overlay">
+            <div class="project-container-overlay-text">
+              <p>Coin toss</p>
+              <a href="games.html" target="_blank"><button>Play!</button></a>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </article>
+    <article class="project">
+      <div class="project-description">
+        <h1>CHARITY</h1>
+        <hr class="underline" />
+        <p>Pay it forward by helping with charitable appeals</p>
+      </div>
+      <div class="project-container">
+        <div class="project-container-item background-colour-default">
+          <a href=""><img src="images/charity/charity-school.png" alt="flyer for give a laptop appeal" /></a>
+          <div class="project-container-overlay">
+            <div class="project-container-overlay-text">
+              <p>Designed and distributed a flyer for a local primary school inspired by BBC's give a laptop appeal</p>
+              <a href="images/charity/charity-school.pdf" target="_blank"><button>Show</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
