@@ -100,7 +100,6 @@ button {
   padding: 8px 16px;
   border: 1px solid #8e8e8e;
   border-radius: 4px;
-  margin: 16px;
   cursor: pointer;
 }
 
@@ -116,11 +115,9 @@ hr {
   margin: 8px 0 16px;
 }
 
-/* icons */
-.material-icons {
-  display: inline-flex;
-  vertical-align: top;
-  margin-right: 8px;
+ /*icons */
+i.fas {
+  color: #8e8e8e;
 }
 
 /* images */
@@ -207,7 +204,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*position: relative;*/
   width: 296px;
   height: 320px;
   padding: 16px;
@@ -223,40 +219,13 @@ nav {
 
 .proj-img-game {
  height: 212px;
+  margin-bottom: 16px;
 }
 
 .proj-img-charity {
   height: 236px;
+  margin-bottom: 16px;
 }
-
-
-/*.project-container-overlay {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*  opacity: 0;*/
-/*  transition: .1s ease;*/
-/*  background-color: #f5f5f5;*/
-/*}*/
-
-/*.project-container:hover .project-container-overlay {*/
-/*  opacity: 1;*/
-/*}*/
-
-/*.project-container-overlay-text {*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  left: 50%;*/
-/*  -webkit-transform: translate(-50%, -50%);*/
-/*  -ms-transform: translate(-50%, -50%);*/
-/*  transform: translate(-50%, -50%);*/
-/*  text-align: center;*/
-/*}*/
-
 
 /* about */
 .about {
@@ -330,13 +299,14 @@ main.about .signature {
   margin: 16px 32px 16px 0;
 }
 
-/*games*/
+/*animations*/
 
 /*atom*/
-.atom {
+.atom-design {
   background-color: #ffffff;
-  height: 264px;
   width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
 }
 .nucleus {
   fill: #f48fb1;
@@ -348,17 +318,13 @@ main.about .signature {
   stroke-width: 1;
 }
 
-.electron-one {
+.electron-one, .electron-two {
   fill: #8e8e8e;
-  animation: electron-clockwise 1s infinite linear;
 }
 
-.electron-two {
-  fill: #8e8e8e;
-  animation: electron-anti-clockwise 1s infinite linear;
-}
-
-.electron {
+.electronAnimation {
+  animation: electron-clockwise 1s linear;
+  animation-iteration-count: 3;
   transform-origin: 50% 50%;
 }
 
@@ -368,19 +334,12 @@ main.about .signature {
   }
 }
 
-@keyframes electron-anti-clockwise {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-
-
 /*clock*/
 .clock {
   background-color: #e5f4ff;
-  height: 264px;
   width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
 }
 
 .clock-face {

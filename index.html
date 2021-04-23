@@ -10,11 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="animations.js" defer></script>
   </head>
   <body>
     <nav>
@@ -76,13 +74,14 @@
       </div>
       <div class="proj-container">
         <div class="proj-item background-colour-default">
-          <svg class="atom">
+          <svg id="atomAnimation" class="atom-design">
             <circle class="nucleus" r="20" cx="50%" cy="50%" />
             <circle class="electron-one-path" r="70" cx="50%" cy="50%" />
             <circle class="electron-two-path" r="100" cx="50%" cy="50%" />
-            <circle class="electron-one electron" r="5" cx="50%" cy="24%" />
-            <circle class="electron-two electron" r="5" cx="80%" cy="72%" />
           </svg>
+          <div>
+            <button id="atomPlayPause"><i class="fas fa-play"></i></button>
+          </div>
         </div>
         <div class="proj-item background-colour-default">
           <svg class="clock">
