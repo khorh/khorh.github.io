@@ -18,6 +18,7 @@ h2,
 h3,
 h4,
 a,
+button,
 p,
 li,
 .tag {
@@ -90,6 +91,10 @@ a:active {
   background-color: #fcf2ff;
 }
 
+.font-colour-secondary {
+  color: #8e8e8e;
+}
+
 /* buttons */
 button {
   font-size: 0.4375rem;
@@ -117,7 +122,7 @@ hr {
 
  /*icons */
 i.fas {
-  color: #8e8e8e;
+  color: #202020;
 }
 
 /* images */
@@ -302,7 +307,7 @@ main.about .signature {
 /*animations*/
 
 /*atom*/
-.atom-design {
+.atom {
   background-color: #ffffff;
   width: 264px;
   height: 236px;
@@ -318,13 +323,12 @@ main.about .signature {
   stroke-width: 1;
 }
 
-.electron-one, .electron-two {
+.electron {
   fill: #8e8e8e;
 }
 
 .electronAnimation {
-  animation: electron-clockwise 1s linear;
-  animation-iteration-count: 3;
+  animation: electron-clockwise 1s infinite linear;
   transform-origin: 50% 50%;
 }
 
@@ -348,21 +352,21 @@ main.about .signature {
   stroke-width: 2;
 }
 
-.clock-hand-hour {
+.clock-hour-hand {
   stroke: #8e8e8e;
   stroke-width: 10;
   stroke-linecap: round;
   animation: clockwise 43200s infinite linear;
 }
 
-.clock-hand-minute {
+.clock-minute-hand {
   stroke: #8e8e8e;
   stroke-width: 6;
   stroke-linecap: round;
   animation: clockwise 3600s infinite linear;
 }
 
-.clock-hand-second {
+.clock-second-hand {
   stroke: #f48fb1;
   stroke-width: 3;
   stroke-linecap: round;
@@ -378,8 +382,6 @@ main.about .signature {
     transform: rotate(360deg);
   }
 }
-
-
 
 /* responsive design */
 /*@media only screen and (max-width: 784px) {*/

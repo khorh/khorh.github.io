@@ -1,5 +1,22 @@
 // Atom
-document.getElementById('atomPlayPause').addEventListener('click', () => {
-    document.getElementById('atomAnimation').innerHTML += '<circle class="electron-one electronAnimation" r="5" cx="50%" cy="20%" /><circle class="electron-two electronAnimation" r="5" cx="80%" cy="76%" />'
+
+// Start the animation of the electrons
+document.querySelector('[data-event="play"]').addEventListener('click', () => {
+    document.getElementById('electronOneAnimation').setAttribute('class',' electron electronAnimation');
+        document.getElementById('electronTwoAnimation').setAttribute('class',' electron electronAnimation');
 });
 
+// Reset the animation of the electrons to its original position
+document.getElementById('reset').addEventListener('click', () => {
+    document.getElementById('electronOneAnimation').setAttribute('class',' electron');
+    document.getElementById('electronTwoAnimation').setAttribute('class',' electron');
+});
+
+
+// Clock
+
+// Determine the current date and time
+const dateTime = new Date();
+
+// Create the date and output this on the front-end
+document.getElementById('dateToday').innerHTML = `<h3 class="font-colour-secondary">${dateTime.getDay()} - ${dateTime.getMonth()} - ${dateTime.getFullYear()}</h3>`;
