@@ -75,23 +75,23 @@ a:active {
 }
 
 /*colours*/
-.background-colour-default {
+.bg-color-default {
   background-color: #f5f5f5;
 }
 
-.background-colour-branding {
+.bg-color-branding {
   background-color: #e5f4ff;
 }
 
-.background-colour-stationery {
+.bg-color-stationery {
   background-color: #ecffe6;
 }
 
-.background-colour-website {
+.bg-color-website {
   background-color: #fcf2ff;
 }
 
-.font-colour-secondary {
+.font-color-secondary {
   color: #8e8e8e;
 }
 
@@ -218,17 +218,17 @@ nav {
   margin: 0 16px 16px 0;
 }
 
-.proj-img-client {
+.proj-img-lrg {
   height: 288px;
 }
 
-.proj-img-game {
- height: 212px;
+.proj-img-md {
+  height: 236px;
   margin-bottom: 16px;
 }
 
-.proj-img-charity {
-  height: 236px;
+.proj-img-sm {
+ height: 212px;
   margin-bottom: 16px;
 }
 
@@ -302,6 +302,13 @@ main.about .signature {
   display: flex;
   width: 60%;
   margin: 16px 32px 16px 0;
+}
+
+/*games*/
+.playground {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
 }
 
 /*animations*/

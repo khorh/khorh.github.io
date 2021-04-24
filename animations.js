@@ -19,4 +19,4 @@ document.getElementById('reset').addEventListener('click', () => {
 const dateTime = new Date();
 
 // Create the date and output this on the front-end
-document.getElementById('dateToday').innerHTML = `<h3 class="font-colour-secondary">${dateTime.getDay()} - ${dateTime.getMonth()} - ${dateTime.getFullYear()}</h3>`;
+document.getElementById('dateToday').innerHTML = `<h3 class="font-color-secondary">${dateTime.getDay()} - ${dateTime.getMonth()} - ${dateTime.getFullYear()}</h3>`;
