@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Helen's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="games.js" defer></script>
+    <script src="games-functions.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="about.html">HELEN KHOR</a>
+        </div>
+        <div class="nav-center">
+            <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+    <hr />
+    <header>
+        <section class="proj">
+            <div class="proj-desc">
+                <h1>COIN TOSS</h1>
+                <hr class="underline" />
+                <p>Click 'Toss' to see the probability of getting Peter or Benjamin Rabbit</p>
+            </div>
+            <div class="proj-container">
+                <div class="proj-item bg-color-default">
+                    <div id="coinToss">
+                        <img class="proj-img-md" src="images/games/games-coin-toss-heads.png" alt="peter rabbit 50p coin">
+                    </div>
+                    <button id="playCoinToss">Toss!</button>
+                </div>
+                <div class="proj-item bg-color-default">
+                    <h4>Results</h4>
+                    <p id="totalPeter">Peter: 0</p>
+                    <p id="totalBenjamin">Benjamin: 0</p>
+                    <p id="totalTosses">Total tosses: 0</p>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
