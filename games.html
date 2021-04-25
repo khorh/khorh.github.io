@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>Helen's Portfolio</title>
+    <title>Helen's Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" type="text/css" />
 
@@ -37,20 +37,43 @@
             <div class="proj-desc">
                 <h1>COIN TOSS</h1>
                 <hr class="underline" />
-                <p>Click 'Toss' to see the probability of getting Peter or Benjamin Rabbit</p>
+                <p>Click 'Toss' to see the chances of getting Peter or Benjamin Rabbit</p>
             </div>
             <div class="proj-container">
                 <div class="proj-item bg-color-default">
-                    <div id="coinToss">
-                        <img class="proj-img-md" src="images/games/games-coin-toss-heads.png" alt="peter rabbit 50p coin">
-                    </div>
+                    <img id="coinToss" class="proj-img-md" src="images/games/coin-toss-peter.png">
                     <button id="playCoinToss">Toss!</button>
                 </div>
                 <div class="proj-item bg-color-default">
-                    <h4>Results</h4>
+                    <h4 class="margin-bottom-16">Results</h4>
                     <p id="totalPeter">Peter: 0</p>
                     <p id="totalBenjamin">Benjamin: 0</p>
                     <p id="totalTosses">Total tosses: 0</p>
+                </div>
+            </div>
+        </section>
+        <section class="proj">
+            <div class="proj-desc">
+                <h1>ROSHAMBO</h1>
+                <hr class="underline" />
+                <p>Click either 'Rock', 'Paper' or 'Scissors' and see if you can win against the computer</p>
+            </div>
+            <div class="proj-container">
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Player</h4>
+                    <img id="playerSelection" class="proj-img-sm" src="images/games/roshambo-empty.png" />
+                    <div class="button-container">
+                        <button id="startRoshambo">Randomise a paw</button>
+                    </div>
+                </div>
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Computer</h4>
+                    <img id="computerSelection" class="proj-img-sm" />
+                </div>
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Results</h4>
+                    <p id="roshamboResult"></p>
+                    <img id="playerWinGif" class="proj-gif" />
                 </div>
             </div>
         </section>
