@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Helen's Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="tools.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="about.html">HELEN KHOR</a>
+        </div>
+        <div class="nav-center">
+            <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+    <hr />
+    <header>
+        <section class="proj">
+            <div class="proj-desc">
+                <h1>LOAN CAL</h1>
+                <hr class="underline" />
+                <p>A calculator to show the loan amount with the admin fee and length of repayment.</p>
+                <div class="tags">
+                    <button class="tag bg-color-default">Individual</button>
+                </div>
+            </div>
+            <div class="proj-container">
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Loan data</h4>
+                    <div class="input-container">
+                        <div class="input-field">
+                            <label for="loan">Loan amount £* :</label>
+                            <input id="loan" type="number" name="loanAmount" required min="1" max="10000" />
+                        </div>
+                        <div class="input-field">
+                            <label for="salary">Expected salary £* :</label>
+                            <input id="salary" type="number" name="expectedSalary" required min="0" value="25000" />
+                        </div>
+                        <div class="input-field">
+                            <label for="repayment">Repayment %* :</label>
+                            <input id="repayment" type="number" name="repaymentPercentage" required min="10" value="10" />
+                        </div>
+                    </div>
+                    <input id="calculate" type="submit" value="Calculate" />
+                </div>
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Loan amount</h4>
+                    <div class="results-container">
+                        <p>Loan amount: £<span id="loanAmount"></span></p>
+                        <p>Upfront admin fee: £<span id="upfrontAdminFee"></span></p>
+                        <p>Additional admin fee: £<span id="addAdminFee"></span></p>
+                        <p>Total loan and fee: £<span id="totalAmount"></span></p>
+                    </div>
+                </div>
+                <div class="proj-item bg-color-default">
+                    <h4 class="margin-bottom-16">Loan repayment</h4>
+                    <div class="results-container">
+                        <p>Expected salary: £<span id="expectedSalary"></span></p>
+                        <p>Repayment percentage: <span id="repaymentPercentage"></span>%</p>
+                        <p>Repayment per month: £<span id="repaymentPerMonth"></span></p>
+                        <p>Last payment amount: £<span id="lastRepaymentAmount"></span></p>
+                        <p>Length of repayment: <span id="lengthOfRepayment"></span> months</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
