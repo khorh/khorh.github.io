@@ -7,7 +7,7 @@ document.querySelector('[data-event="play"]').addEventListener('click', () => {
 });
 
 // Reset the animation of the electrons to its original position
-document.getElementById('reset').addEventListener('click', () => {
+document.getElementById('resetAtom').addEventListener('click', () => {
     document.getElementById('electronOneAnimation').setAttribute('class',' electron');
     document.getElementById('electronTwoAnimation').setAttribute('class',' electron');
 });
