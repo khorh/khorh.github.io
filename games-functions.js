@@ -4,35 +4,49 @@
 /**
  * function to display every click of the Toss! button
  * @param {number} totalTosses which is the total number of tosses
- * @returns a display of the total number of tosses
+ * @returns {number} a display of the total number of tosses
  */
 const displayTotalTosses = (totalTosses) => {
-    document.getElementById('totalTosses').innerHTML = `Total tosses: ${totalTosses}`;
+    document.getElementById('totalTosses').innerHTML = `${totalTosses}`;
 }
 
 /**
- * function to randomise the toss of a coin and display the image
- * function to add one to every Peter's or Benjamin's count depending on the toss
- * function to calculate and display the probability of getting Peter and Benjamin on every coin toss
- *  * @param {number} totalTosses which is the total number of tosses to calculate the probability
- * @returns a Peter or Benjamin coin image, number & probability of Peter and number & probability of Benjamin
+ * function to display the image based on the randomise number of 1 and 2
+ * @param {number} coinToss which is the random number of either 1 or 2
+ * @returns display the image of Peter or Benjamin 50p coin
  */
-const displayToss = (totalTosses) => {
-    const coinToss = Math.ceil(Math.random() * 2);
+const displayToss = (coinToss) => {
     const coinTossImage = document.querySelector('#coinTossImage');
-
     if (coinToss === 1) {
         coinTossImage.setAttribute('src', 'images/games/coin-toss-peter.png');
         coinTossImage.setAttribute('alt', 'peter rabbit 50p coin');
-        numberOfPeter += 1;
-        document.getElementById('totalPeter').innerHTML = `${numberOfPeter}`;
     } else if (coinToss === 2) {
         coinTossImage.setAttribute('src','images/games/coin-toss-benjamin.png');
         coinTossImage.setAttribute('alt', 'benjamin rabbit 50p coin');
+    }
+}
+
+/**
+ * function to add and display the counts of Peter and Benjamin
+ * @param {number} coinToss which is the random number of either 1 or 2
+ * @returns {number} counts for Peter and Benjamin and display the counts
+ */
+const displayCount = (coinToss) => {
+    if (coinToss === 1) {
+        numberOfPeter += 1;
+        document.getElementById('totalPeter').innerHTML = `${numberOfPeter}`;
+    } else if (coinToss === 2) {
         numberOfBenjamin +=1;
         document.getElementById('totalBenjamin').innerHTML = `${numberOfBenjamin}`;
     }
+}
 
+/**
+ * function to calculate and display the probability of Peter and Benjamin
+ * @param {number} totalTosses which is the total number of tosses
+ * @returns {number} probabilities in percentage of Peter and Benjamin and display the probabilities
+ */
+const displayProbability = (totalTosses) => {
     const calculatePeter = (numberOfPeter/totalTosses)*100;
     const percentagePeter = calculatePeter.toFixed(0);
     document.getElementById('percentagePeter').innerHTML = `${percentagePeter}%`;
@@ -42,18 +56,22 @@ const displayToss = (totalTosses) => {
     document.getElementById('percentageBenjamin').innerHTML = `${percentageBenjamin}%`;
 }
 
-
 // Roshambo
 const getPlayerSelection = () => {
     let playerRandomNumber = Math.ceil(Math.random() * 3);
 
-    switch (playerRandomNumber) {
+    switch(playerRandomNumber) {
         case 1:
             return 'rock';
+            break;
         case 2:
             return 'paper';
+            break;
         case 3:
             return 'scissors';
+            break;
+        default:
+            return 'invalid';
     }
 }
 
@@ -73,13 +91,18 @@ const displayPlayerSelection = () => {
 const getComputerSelection = () => {
     let computerRandomNumber = Math.ceil(Math.random() * 3);
 
-    switch (computerRandomNumber) {
+    switch(computerRandomNumber) {
         case 1:
             return 'rock';
+            break;
         case 2:
             return 'paper';
+            break;
         case 3:
             return 'scissors';
+            break;
+        default:
+            return 'invalid';
     }
 }
 

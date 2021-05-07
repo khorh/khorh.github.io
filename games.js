@@ -7,8 +7,11 @@ let numberOfBenjamin = 0;
 
 document.getElementById('playCoinToss').addEventListener('click', () => {
     const totalTosses = numberOfTosses++;
-    displayToss(totalTosses);
+    const coinToss = Math.ceil(Math.random() * 2);
+    displayToss(coinToss);
     displayTotalTosses(totalTosses);
+    displayCount(coinToss);
+    displayProbability(totalTosses);
 })
 
 // Roshambo
