@@ -14,6 +14,10 @@ document.getElementById('playCoinToss').addEventListener('click', () => {
     displayProbability(totalTosses);
 })
 
+document.getElementById('resetCoinToss').addEventListener('click', () => {
+    document.location.reload();
+})
+
 // Roshambo
 document.getElementById('startRoshambo').addEventListener('click', () => {
     displayPlayerSelection();
