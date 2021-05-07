@@ -2,33 +2,46 @@
 
 // Coin toss
 /**
- * function to add one to every click of the Toss! button
- * @returns a total number of tosses
+ * function to display every click of the Toss! button
+ * @param {number} totalTosses which is the total number of tosses
+ * @returns a display of the total number of tosses
  */
-const displayTotalTosses = () => {
-    numberOfTosses += 1;
-    document.getElementById('totalTosses').innerHTML = `Total tosses: ${numberOfTosses}`;
+const displayTotalTosses = (totalTosses) => {
+    document.getElementById('totalTosses').innerHTML = `Total tosses: ${totalTosses}`;
 }
 
 /**
- * function to randomise the toss of a coin
- * @returns a Peter or Benjamin coin image
+ * function to randomise the toss of a coin and display the image
+ * function to add one to every Peter's or Benjamin's count depending on the toss
+ * function to calculate and display the probability of getting Peter and Benjamin on every coin toss
+ *  * @param {number} totalTosses which is the total number of tosses to calculate the probability
+ * @returns a Peter or Benjamin coin image, number & probability of Peter and number & probability of Benjamin
  */
-const displayToss = () => {
+const displayToss = (totalTosses) => {
     const coinToss = Math.ceil(Math.random() * 2);
+    const coinTossImage = document.querySelector('#coinTossImage');
 
     if (coinToss === 1) {
-        document.querySelector('#coinTossImage').setAttribute('src', 'images/games/coin-toss-peter.png');
-        document.querySelector('#coinTossImage').setAttribute('alt', 'peter rabbit 50p coin');
+        coinTossImage.setAttribute('src', 'images/games/coin-toss-peter.png');
+        coinTossImage.setAttribute('alt', 'peter rabbit 50p coin');
         numberOfPeter += 1;
-        document.getElementById('totalPeter').innerHTML = `Peter: ${numberOfPeter}`;
+        document.getElementById('totalPeter').innerHTML = `${numberOfPeter}`;
     } else if (coinToss === 2) {
-        document.querySelector('#coinTossImage').setAttribute('src','images/games/coin-toss-benjamin.png');
-        document.querySelector('#coinTossImage').setAttribute('alt', 'benjamin rabbit 50p coin');
+        coinTossImage.setAttribute('src','images/games/coin-toss-benjamin.png');
+        coinTossImage.setAttribute('alt', 'benjamin rabbit 50p coin');
         numberOfBenjamin +=1;
-        document.getElementById('totalBenjamin').innerHTML = `Benjamin: ${numberOfBenjamin}`;
+        document.getElementById('totalBenjamin').innerHTML = `${numberOfBenjamin}`;
     }
+
+    const calculatePeter = (numberOfPeter/totalTosses)*100;
+    const percentagePeter = calculatePeter.toFixed(0);
+    document.getElementById('percentagePeter').innerHTML = `${percentagePeter}%`;
+
+    const calculateBenjamin = (numberOfBenjamin/totalTosses)*100;
+    const percentageBenjamin = calculateBenjamin.toFixed(0);
+    document.getElementById('percentageBenjamin').innerHTML = `${percentageBenjamin}%`;
 }
+
 
 // Roshambo
 const getPlayerSelection = () => {

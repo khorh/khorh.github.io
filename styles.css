@@ -244,12 +244,12 @@ i.fas {
 
 /*images*/
 .avatar-md {
-  height: 160px;
-  margin-bottom: 16px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 .avatar-sm img {
   width: 32px;
-  margin: 8px 0;
+  margin: 8px;
 }
 
 
