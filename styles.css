@@ -249,7 +249,7 @@ i.fas {
 }
 .avatar-sm img {
   width: 32px;
-  margin: 8px;
+  margin: 8px 4px;
 }
 
 
@@ -315,7 +315,7 @@ nav {
 
 /*header*/
 .title {
-  border-left: 6px solid #c72F58;
+  border-left: 4px solid #c72F58;
   padding-left: 16px;
   margin-bottom: 64px;
 }
