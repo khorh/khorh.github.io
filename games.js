@@ -1,4 +1,4 @@
-// Games
+// Games using functional programming
 
 // Coin toss
 let numberOfTosses = 1;

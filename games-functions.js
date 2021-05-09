@@ -1,8 +1,7 @@
-// Games
+// Games using functional programming
 
-// Coin toss
 /**
- * function to display every click of the Toss! button
+ * Coin toss function to display every click of the Toss! button
  * @param {number} totalTosses which is the total number of tosses
  * @returns {number} a display of the total number of tosses
  */
@@ -11,23 +10,22 @@ const displayTotalTosses = (totalTosses) => {
 }
 
 /**
- * function to display the image based on the randomise number of 1 and 2
+ * Coin toss function to display the image based on the randomise number of 1 and 2
  * @param {number} coinToss which is the random number of either 1 or 2
  * @returns display the image of Peter or Benjamin 50p coin
  */
 const displayToss = (coinToss) => {
-    const coinTossImage = document.querySelector('#coinTossImage');
     if (coinToss === 1) {
-        coinTossImage.setAttribute('src', 'images/games/coin-toss-peter.png');
-        coinTossImage.setAttribute('alt', 'peter rabbit 50p coin');
+        document.querySelector('#coinTossImage').setAttribute('src', 'images/games/coin-toss-peter.png');
+        document.querySelector('#coinTossImage').setAttribute('alt', 'peter rabbit 50p coin');
     } else if (coinToss === 2) {
-        coinTossImage.setAttribute('src','images/games/coin-toss-benjamin.png');
-        coinTossImage.setAttribute('alt', 'benjamin rabbit 50p coin');
+        document.querySelector('#coinTossImage').setAttribute('src','images/games/coin-toss-benjamin.png');
+        document.querySelector('#coinTossImage').setAttribute('alt', 'benjamin rabbit 50p coin');
     }
 }
 
 /**
- * function to add and display the counts of Peter and Benjamin
+ * Coin toss function to add and display the counts of Peter and Benjamin
  * @param {number} coinToss which is the random number of either 1 or 2
  * @returns {number} counts for Peter and Benjamin and display the counts
  */
@@ -42,7 +40,7 @@ const displayCount = (coinToss) => {
 }
 
 /**
- * function to calculate and display the probability of Peter and Benjamin
+ * Coin toss function to calculate and display the probability of Peter and Benjamin
  * @param {number} totalTosses which is the total number of tosses
  * @returns {number} probabilities in percentage of Peter and Benjamin and display the probabilities
  */
