@@ -55,189 +55,92 @@ const displayProbability = (totalTosses) => {
 }
 
 // Roshambo
+/**
+ * Roshambo function to turn a randomised number into a string for the player's selection
+ * @return {string} of rock, paper or scissors based on the random number
+ */
 const getPlayerSelection = () => {
-    let playerRandomNumber = Math.ceil(Math.random() * 3);
-
-    switch(playerRandomNumber) {
-        case 1:
-            return 'rock';
-            break;
-        case 2:
-            return 'paper';
-            break;
-        case 3:
-            return 'scissors';
-            break;
-        default:
-            return 'invalid';
+    const playerRandomNumber = Math.ceil(Math.random() * 3);
+    if (playerRandomNumber === 1) {
+        return 'rock';
+    } else if (playerRandomNumber === 2) {
+        return 'paper';
+    } else if (playerRandomNumber === 3) {
+        return 'scissors';
     }
 }
 
-const displayPlayerSelection = () => {
-    if (getPlayerSelection() === 'rock') {
-            document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-rock.png');
-            document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a rock sign');
-    } else if (getPlayerSelection() === 'paper') {
-            document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-paper.png');
-            document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a paper sign');
-    } else {
-            document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-scissors.png');
-            document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a scissors sign');
+/**
+ * Roshambo function to display the output based on the selected string for the player
+ * @return {string} containing the image source and alt text content
+ */
+const displayPlayerSelection = (outcomePlayerSelection) => {
+    if (outcomePlayerSelection === 'rock') {
+        document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-rock.png');
+        document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a rock sign');
+    } else if (outcomePlayerSelection === 'paper') {
+        document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-paper.png');
+        document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a paper sign');
+    } else if (outcomePlayerSelection === 'scissors') {
+        document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-scissors.png');
+        document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a scissors sign');
     }
 }
 
+/**
+ * Roshambo function to randomise either 1, 2 or 3 for the computer's selection
+ * @return {string} of rock, paper or scissors based on the random number
+ */
 const getComputerSelection = () => {
     let computerRandomNumber = Math.ceil(Math.random() * 3);
-
-    switch(computerRandomNumber) {
-        case 1:
+        if (computerRandomNumber === 1) {
             return 'rock';
-            break;
-        case 2:
+        } else if (computerRandomNumber === 2) {
             return 'paper';
-            break;
-        case 3:
+        } else if (computerRandomNumber === 3) {
             return 'scissors';
-            break;
-        default:
-            return 'invalid';
-    }
+        }
 }
 
-const displayComputerSelection = () => {
-    if (getComputerSelection() === 'rock') {
+/**
+ * Roshambo function to display the output based on the selected string for the computer
+ * @return {string} containing the image source and alt text content
+ */
+const displayComputerSelection = (outcomeComputerSelection) => {
+    if (outcomeComputerSelection === 'rock') {
         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-rock.png');
         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a rock sign');
-    } else if (getComputerSelection() === 'paper') {
+    } else if (outcomeComputerSelection === 'paper') {
         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-paper.png');
         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a paper sign');
-    } else {
+    } else if (outcomeComputerSelection === 'scissors') {
         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-scissors.png');
         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a scissors sign');
     }
 }
 
-const displayRoshamboResult = () => {
-    if (getPlayerSelection === getComputerSelection) {
+/**
+ * Roshambo function to determine the winner for every randomised paw
+ * @return {string} containing the results
+ */
+
+const displayRoshamboResult = (outcomePlayerSelection, outcomeComputerSelection) => {
+    if (outcomePlayerSelection === outcomeComputerSelection) {
         document.getElementById('roshamboResult').textContent = 'It is a draw. Try again?';
+    } else if (outcomePlayerSelection === 'rock' && outcomeComputerSelection === 'paper') {
+        document.getElementById('roshamboResult').textContent = 'Computer wins. Try again?';
+    } else if (outcomePlayerSelection === 'rock' && outcomeComputerSelection === 'scissors') {
+        document.getElementById('roshamboResult').textContent = 'You win! Try again?';
+    } else if (outcomePlayerSelection === 'paper' && outcomeComputerSelection === 'rock') {
+        document.getElementById('roshamboResult').textContent = 'You win! Try again?';
+    } else if (outcomePlayerSelection === 'paper' && outcomeComputerSelection === 'scissors') {
+        document.getElementById('roshamboResult').textContent = 'Computer wins. Try again?';
+    } else if (outcomePlayerSelection === 'scissors' && outcomeComputerSelection === 'rock') {
+        document.getElementById('roshamboResult').textContent = 'Computer wins. Try again?';
+    } else if (outcomePlayerSelection === 'scissors' && outcomeComputerSelection === 'paper') {
+        document.getElementById('roshamboResult').textContent = 'You win! Try again?';
     }
-    if (getPlayerSelection === 'rock') {
-        if (getComputerSelection === 'paper') {
-            document.getElementById('roshamboResult').textContent = 'Computer beat you this time! Have another go?';
-        } else {
-            document.getElementById('roshamboResult').textContent = 'You win! Have another go?';
-        }
-    }
-    if (getPlayerSelection === 'paper') {
-        if (getComputerSelection === 'scissors') {
-            document.getElementById('roshamboResult').textContent = 'You win! Have another go?';
-        } else {
-            document.getElementById('roshamboResult').textContent = 'Computer beat you this time! Have another go?';
-        }
-    }
-    if (getPlayerSelection === 'scissors') {
-        if (getComputerSelection === 'rock') {
-            document.getElementById('roshamboResult').textContent = 'Computer beat you this time! Have another go?';
-        } else {
-            document.getElementById('roshamboResult').textContent = 'You win! Have another go?';
-        }
+    else {
+        return 'Something else!';
     }
 }
-
-// console.log(displayRoshamboResult());
-
-// Roshambo Original
-// /**
-//  * function to randomise the player's selection of rock, paper or scissors
-//  * @returns the image and alt text related to the random selection
-//  */
-
-// console.log(playerRandomNumber);
-// const displayPlayerSelection = () => {
-//     let playerRandomNumber = Math.ceil(Math.random() * 3);
-//
-//     if (playerRandomNumber === 1) {
-//         document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-rock.png');
-//         document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a rock sign');
-//     } else if (playerRandomNumber === 2) {
-//         document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-paper.png');
-//         document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a paper sign');
-//     } else if (playerRandomNumber === 3) {
-//         document.querySelector('#playerSelection').setAttribute('src', 'images/games/roshambo-scissors.png');
-//         document.querySelector('#playerSelection').setAttribute('alt', 'paw of cat showing a scissors sign');
-//     }
-// }
-
-// /**
-//  * function to randomise the computer's selection of rock, paper or scissors
-//  * @returns the image and alt text related to the random selection
-//  */
-//
-// const computerRandomNumber = Math.ceil(Math.random() * 3);
-// console.log(computerRandomNumber);
-
-// let displayComputerSelection = () => {
-//     if (computerRandomNumber === 1) {
-//         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-rock.png');
-//         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a rock sign');
-//         return 'rock';
-//     } else if (computerRandomNumber === 2) {
-//         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-paper.png');
-//         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a paper sign');
-//         return 'paper';
-//     } else if (computerRandomNumber === 3) {
-//         document.querySelector('#computerSelection').setAttribute('src', 'images/games/roshambo-scissors.png');
-//         document.querySelector('#computerSelection').setAttribute('alt', 'paw of cat showing a scissors sign');
-//         return 'scissors';
-//     }
-// }
-
-// /**
-//  * functions to provide text based on the result between player and computer
-//  * @returns the text in the paragraph tag
-//  */
-// const drawResult = () => {
-//     document.getElementById('roshamboResult').textContent = 'It is a draw. Try again?';
-//     document.querySelector('#playerWinGif').removeAttribute('src');
-//     document.querySelector('#playerWinGif').removeAttribute('alt');
-// }
-//
-// const playerWinResult = () => {
-//     document.getElementById('roshamboResult').textContent = 'You win! Have another go?';
-//     document.querySelector('#playerWinGif').setAttribute('src','https://media.giphy.com/media/VxbvpfaTTo3le/giphy.gif');
-//     document.querySelector('#playerWinGif').setAttribute('alt','gif image of kitten flying in the air');
-// }
-//
-// const computerWinResult = () => {
-//     document.getElementById('roshamboResult').textContent = 'Computer beat you this time! Have another go?';
-//     document.querySelector('#playerWinGif').removeAttribute('src');
-//     document.querySelector('#playerWinGif').removeAttribute('alt');
-// }
-
-// /**
-//  * functions to determine the result of the roshambo
-//  * @returns the text in the paragraph tag
-//  */
-// const roshamboResult = () => {
-//     if (playerRandomNumber === computerRandomNumber) {
-//         return 'draw';
-//     } else if (playerRandomNumber === 1 && computerRandomNumber === 2) {
-//         return 'computer wins';
-//     } else if (playerRandomNumber === 1 && computerRandomNumber === 3) {
-//         return 'player wins';
-//     } else if (playerRandomNumber === 2 && computerRandomNumber === 1) {
-//         return 'player wins';
-//     } else if (playerRandomNumber === 2 && computerRandomNumber === 3) {
-//         return 'computer wins';
-//     } else if (playerRandomNumber === 3 && computerRandomNumber === 1) {
-//         return 'computer wins';
-//     } else if (playerRandomNumber === 3 && computerRandomNumber === 2) {
-//         return 'player wins';
-//     }
-//     else {
-//         return 'Something else!';
-//     }
-// }
-//
-//
-// console.log(roshamboResult());

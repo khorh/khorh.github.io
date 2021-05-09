@@ -20,7 +20,15 @@ document.getElementById('resetCoinToss').addEventListener('click', () => {
 
 // Roshambo
 document.getElementById('startRoshambo').addEventListener('click', () => {
-    displayPlayerSelection();
-    displayComputerSelection();
-    displayRoshamboResult();
+    const outcomePlayerSelection = getPlayerSelection();
+    displayPlayerSelection(outcomePlayerSelection);
+
+    const outcomeComputerSelection = getComputerSelection();
+    displayComputerSelection(outcomeComputerSelection);
+
+    displayRoshamboResult(outcomePlayerSelection, outcomeComputerSelection);
+})
+
+document.getElementById('resetRoshambo').addEventListener('click', () => {
+    document.location.reload();
 })

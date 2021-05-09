@@ -1,4 +1,7 @@
+// Tools using procedural programming
+
 // Loan calculator
+
 // Calculate loan
 document.getElementById('calculateLoan').addEventListener('click', () => {
 
@@ -52,49 +55,129 @@ document.getElementById('resetLoanCal').addEventListener('click', () => {
 })
 
 
+// Mob pro
+let mobNames = [];
+
+// Mob pro - Add names to the list
+document.getElementById('addMobButton').addEventListener('click', () => {
+    const getMobName = document.getElementById('addMobName').value;
+    mobNames.push(getMobName);
+    document.getElementById('listOfMobNames').innerHTML = `${mobNames}`;
+    document.getElementById('addMobName').value = ``;
+})
+
+// Mob pro - Start mob programming
+document.getElementById('nextMobName').addEventListener('click', () => {
+    // Select a random name
+    const randomNumber = Math.floor(Math.random() * mobNames.length);
+    let selectedMobName = mobNames.splice(randomNumber, 1)[0];
+    document.getElementById('mobName').innerHTML = `${selectedMobName}`;
+
+    // Start position
+    let getPersonCodingTime = document.getElementById('personCodingTime').value;
+    document.getElementById('mobNameCountdown').innerText = `${getPersonCodingTime} minutes`;
+    document.getElementById('personCodingTime').disabled = true;
+    document.getElementById('addMobName').disabled = true;
+    document.getElementById('addMobButton').disabled = true;
+    document.getElementById('nextMobName').disabled = true;
+
+    // Countdown for the selected person
+    setInterval(() => {
+        getPersonCodingTime--;
+
+        if (getPersonCodingTime >= 0) {
+            document.getElementById('mobNameCountdown').innerText = `${getPersonCodingTime} minutes`;
+        }
+
+        if (getPersonCodingTime === 0) {
+            document.getElementById('nextMobName').disabled = false;
+        }
+    }, 1000);
+})
+
+// Mob Pro - Reset
+document.getElementById('resetMobPro').addEventListener('click', () => {
+    document.location.reload();
+})
+
+
 // Pair Pro
-// P1 name and avatar
+
+// Pair Pro - P1 name and avatar
 document.getElementById('personOne').addEventListener('keyup',() => {
     const getPersonOne = document.getElementById('personOne').value;
     document.getElementById('personOneName').textContent = `${getPersonOne}`;
 });
 
+const personOneAvatar = document.getElementById('personOneAvatar');
+
 document.getElementById('catAvatar').addEventListener('click', () => {
-    document.getElementById('personOneAvatar').setAttribute('src','images/tools/cat.svg');
+    personOneAvatar.setAttribute('src','images/tools/cat.svg');
+    personOneAvatar.setAttribute('alt','cat avatar');
 });
 
 document.getElementById('dogAvatar').addEventListener('click', () => {
-    document.getElementById('personOneAvatar').setAttribute('src','images/tools/dog.svg');
+    personOneAvatar.setAttribute('src','images/tools/dog.svg');
+    personOneAvatar.setAttribute('alt','dog avatar');
+});
+
+document.getElementById('koiAvatar').addEventListener('click', () => {
+    personOneAvatar.setAttribute('src','images/tools/koi.svg');
+    personOneAvatar.setAttribute('alt','koi avatar');
+});
+
+document.getElementById('miceAvatar').addEventListener('click', () => {
+    personOneAvatar.setAttribute('src','images/tools/mice.svg');
+    personOneAvatar.setAttribute('alt','mice avatar');
 });
 
 document.getElementById('rabbitAvatar').addEventListener('click', () => {
-    document.getElementById('personOneAvatar').setAttribute('src','images/tools/rabbit.svg');
+    personOneAvatar.setAttribute('src','images/tools/rabbit.svg');
+    personOneAvatar.setAttribute('alt','rabbit avatar');
 });
 
-// P2 name and avatar
+// Pair Pro - P2 name and avatar
 document.getElementById('personTwo').addEventListener('keyup', () => {
     const getPersonTwo = document.getElementById('personTwo').value;
     document.getElementById('personTwoName').textContent = `${getPersonTwo}`;
 });
 
-document.getElementById('chimpanzeeAvatar').addEventListener('click', () => {
-    document.getElementById('personTwoAvatar').setAttribute('src','images/tools/chimpanzee.svg');
+const personTwoAvatar = document.getElementById('personTwoAvatar');
+
+document.getElementById('butterflyAvatar').addEventListener('click', () => {
+    personTwoAvatar.setAttribute('src','images/tools/butterfly.svg');
+    personTwoAvatar.setAttribute('alt','butterfly avatar');
 });
 
-document.getElementById('giraffeAvatar').addEventListener('click', () => {
-    document.getElementById('personTwoAvatar').setAttribute('src','images/tools/giraffe.svg');
+document.getElementById('crabAvatar').addEventListener('click', () => {
+    personTwoAvatar.setAttribute('src','images/tools/crab.svg');
+    personTwoAvatar.setAttribute('alt','crab avatar');
 });
 
-document.getElementById('lemurAvatar').addEventListener('click', () => {
-    document.getElementById('personTwoAvatar').setAttribute('src','images/tools/lemur.svg');
+document.getElementById('elephantAvatar').addEventListener('click', () => {
+    personTwoAvatar.setAttribute('src','images/tools/elephant.svg');
+    personTwoAvatar.setAttribute('alt','elephant avatar');
 });
 
-// Start pair programming
+document.getElementById('frogAvatar').addEventListener('click', () => {
+    personTwoAvatar.setAttribute('src','images/tools/frog.svg');
+    personTwoAvatar.setAttribute('alt','frog avatar');
+});
+
+document.getElementById('koalaAvatar').addEventListener('click', () => {
+    personTwoAvatar.setAttribute('src','images/tools/koala.svg');
+    personTwoAvatar.setAttribute('alt','koala avatar');
+});
+
+// Pair Pro - Start pair programming
 document.getElementById('startPairPro').addEventListener('click', () => {
     let getTotalCodingTime = parseInt(document.getElementById('totalCodingTime').value);
     let halfTotalCodingTime = getTotalCodingTime / 2;
 
-    // Starting position
+    // Start position
+    document.getElementById('personOne').disabled = true;
+    document.getElementById('personTwo').disabled = true;
+    document.getElementById('totalCodingTime').disabled = true;
     document.getElementById('startPairPro').disabled = true;
     document.getElementById('personOneCountdown').innerHTML = `${getTotalCodingTime} minutes left`;
     document.getElementById('personTwoCountdown').innerHTML = `Please observe`;
@@ -114,16 +197,12 @@ document.getElementById('startPairPro').addEventListener('click', () => {
 
         if (getTotalCodingTime <= 0) {
             clearInterval();
-            document.getElementById('personOneCountdown').innerHTML = `Have a break!`;
-            document.getElementById('personTwoCountdown').innerHTML = `Have a break!`;
-            document.getElementById('startPairPro').disabled = false;
+            document.location.reload();
         }
     }, 1000);
 })
 
-// Reset pair programming
+// Pair Pro - Reset
 document.getElementById('resetPairPro').addEventListener('click', () => {
-    document.getElementById('personOne').value = '';
-    document.getElementById('personTwo').value = '';
-    document.getElementById('totalCodingTime').value = '';
+    document.location.reload();
 })

@@ -61,11 +61,11 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <button id="resetLoanCal">Reset</button>
-                    <button id="calculateLoan">Calculate</button>
+                    <button id="resetLoanCal" class="button-negative">Reset</button>
+                    <button id="calculateLoan" class="button-positive">Calculate</button>
                 </div>
             </div>
-            <div class="proj-item bg-color-default">
+            <div class="proj-item bdr-color-default">
                 <h4>Loan amount</h4>
                 <div class="results-container">
                     <p>Loan amount: £<span id="loanAmount"></span></p>
@@ -74,7 +74,7 @@
                     <p>Total loan and fee: £<span id="totalAmount"></span></p>
                 </div>
             </div>
-            <div class="proj-item bg-color-default">
+            <div class="proj-item bdr-color-default">
                 <h4>Loan repayment</h4>
                 <div class="results-container">
                     <p>Expected salary: £<span id="expectedSalary"></span></p>
@@ -86,11 +86,48 @@
             </div>
         </div>
     </section>
+    <section id="mobPro" class="proj">
+        <div class="proj-desc">
+            <h1>MOB PRO</h1>
+            <hr class="underline" />
+            <p>A tool for mob programming.</p>
+            <div class="tags">
+                <button class="tag bg-color-default">Team</button>
+                <button class="tag bg-color-default">Individual</button>
+            </div>
+        </div>
+        <div class="proj-container">
+            <div id="mobNames" class="proj-item bg-color-default">
+                <h4>Mob information</h4>
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="personCodingTime">Time per person (minutes)*:</label>
+                        <input id="personCodingTime" type="number" name="person-coding-time" min="0" />
+                    </div>
+                    <div class="input-field">
+                        <label for="addMobName">Name*:</label>
+                        <input id="addMobName" type="text" name="addMobName" required />
+                        <button id="addMobButton">+</button>
+                    </div>
+                    <p id="listOfMobNames"></p>
+                </div>
+                <div class="button-container">
+                    <button id="resetMobPro" class="button-negative">Reset</button>
+                    <button id="nextMobName" class="button-positive">Whose next</button>
+                </div>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <h4>Go mob!</h4>
+                <h1 id="mobName"></h1>
+                <h2 id="mobNameCountdown"></h2>
+            </div>
+        </div>
+    </section>
     <section id="pairPro" class="proj">
         <div class="proj-desc">
             <h1>PAIR PRO</h1>
             <hr class="underline" />
-            <p>A tool to ensure each person has equal amount of time to code during pair programming .</p>
+            <p>A tool to ensure each person has equal amount of time to code during pair programming.</p>
             <div class="tags">
                 <button class="tag bg-color-default">Individual</button>
             </div>
@@ -100,41 +137,45 @@
                 <h4>Pair information</h4>
                 <div class="input-container">
                     <div class="input-field">
-                        <label for="personOne">P1</label>
-                        <input id="personOne" type="text" name="person-one" placeholder="name" required />
-                        <div class="avatar-sm">
-                            <img id="catAvatar" src="images/tools/cat.svg" alt="cat avatar" />
-                            <img id="dogAvatar" src="images/tools/dog.svg" alt="dog avatar" />
-                            <img id="rabbitAvatar" src="images/tools/rabbit.svg" alt="rabbit avatar">
-                        </div>
+                        <label for="personOne">P1 name:</label>
+                        <input id="personOne" type="text" name="person-one" />
                     </div>
                     <div class="input-field">
-                        <label for="personTwo">P2</label>
-                        <input id="personTwo" type="text" name="person-two" placeholder="name" required />
-                        <div class="avatar-sm">
-                            <img id="chimpanzeeAvatar" src="images/tools/chimpanzee.svg" alt="chimpanzee avatar">
-                            <img id="giraffeAvatar" src="images/tools/giraffe.svg" alt="giraffe avatar">
-                            <img id="lemurAvatar" src="images/tools/lemur.svg" alt="lemur avatar">
-                        </div>
+                        <label for="personTwo">P2 name:</label>
+                        <input id="personTwo" type="text" name="person-two" />
                     </div>
                     <div class="input-field">
-                        <label for="totalCodingTime">Total coding time in minutes*:</label>
+                        <label for="totalCodingTime">Total time (minutes)*:</label>
                         <input id="totalCodingTime" type="number" name="total-coding-time" min="0" />
                     </div>
                 </div>
                 <div class="button-container">
-                    <button id="resetPairPro">Reset</button>
-                    <button id="startPairPro">Start</button>
+                    <button id="resetPairPro" class="button-negative">Reset</button>
+                    <button id="startPairPro" class="button-positive">Start</button>
                 </div>
             </div>
-            <div class="proj-item bg-color-default">
+            <div class="proj-item bdr-color-default">
+                <div class="avatar-sm">
+                    <img id="catAvatar" src="images/tools/cat.svg" alt="cat avatar" />
+                    <img id="dogAvatar" src="images/tools/dog.svg" alt="dog avatar" />
+                    <img id="koiAvatar" src="images/tools/koi.svg" alt="koi avatar" />
+                    <img id="miceAvatar" src="images/tools/mice.svg" alt="mice avatar" />
+                    <img id="rabbitAvatar" src="images/tools/rabbit.svg" alt="rabbit avatar" />
+                </div>
+                <img id="personOneAvatar" class="avatar-md" src="images/tools/cat.svg" alt="cat avatar" />
                 <h1 id="personOneName"></h1>
-                <img id="personOneAvatar" class="avatar-md" />
                 <h2 id="personOneCountdown"></h2>
             </div>
-            <div class="proj-item bg-color-default">
+            <div class="proj-item bdr-color-default">
+                <div class="avatar-sm">
+                    <img id="butterflyAvatar" src="images/tools/butterfly.svg" alt="butterfly avatar" />
+                    <img id="crabAvatar" src="images/tools/crab.svg" alt="crab avatar" />
+                    <img id="elephantAvatar" src="images/tools/elephant.svg" alt="elephant avatar" />
+                    <img id="frogAvatar" src="images/tools/frog.svg" alt="frog avatar" />
+                    <img id="koalaAvatar" src="images/tools/koala.svg" alt="koala avatar" />
+                </div>
+                <img id="personTwoAvatar" class="avatar-md" src="images/tools/butterfly.svg" alt="butterfly avatar" />
                 <h1 id="personTwoName"></h1>
-                <img id="personTwoAvatar" class="avatar-md" />
                 <h2 id="personTwoCountdown"></h2>
             </div>
         </div>
