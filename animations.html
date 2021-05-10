@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Helen's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="animations.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="about.html">HELEN KHOR</a>
+      </div>
+      <div class="nav-center">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">PROJECTS</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </nav>
+    <hr />
+    <header class="title">
+      <h2>ANIMATIONS</h2>
+    </header>
+    <section class="proj">
+      <div class="proj-container">
+        <div class="proj-item bg-color-default">
+          <svg class="atom">
+            <circle class="nucleus" r="20" cx="50%" cy="50%" />
+            <circle class="electron-one-path" r="70" cx="50%" cy="50%" />
+            <circle class="electron-two-path" r="100" cx="50%" cy="50%" />
+            <circle id="electronOneAnimation" class="electron" r="5" cx="50%" cy="20%"/>
+            <circle id="electronTwoAnimation" class="electron" r="5" cx="80%" cy="76%"/>
+          </svg>
+          <div class="button-container">
+            <button id="resetAtom">Reset</button>
+            <button data-event="play"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+        <div class="proj-item bg-color-default">
+          <svg class="clock">
+            <circle class="clock-face" r="100" cx="50%" cy="50%" />
+            <line class="clock-second-hand clockwise" x1="50%" y1="50%" x2="50%" y2="15%" />
+            <line class="clock-minute-hand clockwise" x1="50%" y1="50%" x2="50%" y2="25%" />
+            <line class="clock-hour-hand clockwise" x1="50%" y1="50%" x2="50%" y2="35%" />
+          </svg>
+          <div id="dateToday"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

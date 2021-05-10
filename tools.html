@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Helen's Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="tools.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="about.html">HELEN KHOR</a>
+        </div>
+        <div class="nav-center">
+            <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+    <hr class="hr-mrg-small"/>
+    <header class="title">
+        <h2>TOOLS</h2>
+    </header>
+    <section id="loanCal" class="proj">
+        <div class="proj-desc">
+            <h1>LOAN CAL</h1>
+            <hr class="underline" />
+            <p>A calculator to show the loan amount with the admin fee and length of repayment</p>
+            <div class="tags">
+                <button class="tag bg-color-default">Individual</button>
+            </div>
+        </div>
+        <div class="proj-container">
+            <div class="proj-item bg-color-default">
+                <h4>Loan data</h4>
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="loan">Loan amount £* :</label>
+                        <input id="loan" type="number" name="loan-amount" required min="1" max="10000" />
+                    </div>
+                    <div class="input-field">
+                        <label for="salary">Expected salary £* :</label>
+                        <input id="salary" type="number" name="expected-salary" required min="0" value="25000" />
+                    </div>
+                    <div class="input-field">
+                        <label for="repayment">Repayment %* :</label>
+                        <input id="repayment" type="number" name="repayment-percentage" required min="10" value="10" />
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="resetLoanCal" class="button-negative">Reset</button>
+                    <button id="calculateLoan" class="button-positive">Calculate</button>
+                </div>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <h4>Loan amount</h4>
+                <div class="results-container">
+                    <p>Loan amount: £<span id="loanAmount"></span></p>
+                    <p>Upfront admin fee: £<span id="upfrontAdminFee"></span></p>
+                    <p>Additional admin fee: £<span id="addAdminFee"></span></p>
+                    <p>Total loan and fee: £<span id="totalAmount"></span></p>
+                </div>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <h4>Loan repayment</h4>
+                <div class="results-container">
+                    <p>Expected salary: £<span id="expectedSalary"></span></p>
+                    <p>Repayment percentage: <span id="repaymentPercentage"></span>%</p>
+                    <p>Repayment per month: £<span id="repaymentPerMonth"></span></p>
+                    <p>Last payment amount: £<span id="lastRepaymentAmount"></span></p>
+                    <p>Length of repayment: <span id="lengthOfRepayment"></span> months</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mobPro" class="proj">
+        <div class="proj-desc">
+            <h1>MOB PRO</h1>
+            <hr class="underline" />
+            <p>A tool for mob programming</p>
+            <div class="tags">
+                <button class="tag bg-color-default">Team</button>
+                <button class="tag bg-color-default">Individual</button>
+            </div>
+        </div>
+        <div class="proj-container">
+            <div id="mobNames" class="proj-item bg-color-default">
+                <h4>Mob information</h4>
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="personCodingTime">Time per person (minutes)*:</label>
+                        <input id="personCodingTime" type="number" name="person-coding-time" min="0" />
+                    </div>
+                    <div class="input-field">
+                        <label for="addMobName">Name*:</label>
+                        <input id="addMobName" type="text" name="addMobName" required />
+                        <button id="addMobButton">+</button>
+                    </div>
+                    <p id="listOfMobNames"></p>
+                </div>
+                <div class="button-container">
+                    <button id="resetMobPro" class="button-negative">Reset</button>
+                    <button id="nextMobName" class="button-positive">Whose next</button>
+                </div>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <h4>Go mob!</h4>
+                <h1 id="mobName"></h1>
+                <h2 id="mobNameCountdown"></h2>
+            </div>
+        </div>
+    </section>
+    <section id="pairPro" class="proj">
+        <div class="proj-desc">
+            <h1>PAIR PRO</h1>
+            <hr class="underline" />
+            <p>A tool to ensure each person has equal amount of time to code during pair programming</p>
+            <div class="tags">
+                <button class="tag bg-color-default">Individual</button>
+            </div>
+        </div>
+        <div class="proj-container">
+            <div id="pairInformation" class="proj-item bg-color-default">
+                <h4>Pair information</h4>
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="personOne">P1 name:</label>
+                        <input id="personOne" type="text" name="person-one" />
+                    </div>
+                    <div class="input-field">
+                        <label for="personTwo">P2 name:</label>
+                        <input id="personTwo" type="text" name="person-two" />
+                    </div>
+                    <div class="input-field">
+                        <label for="totalCodingTime">Total time (minutes)*:</label>
+                        <input id="totalCodingTime" type="number" name="total-coding-time" min="0" />
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="resetPairPro" class="button-negative">Reset</button>
+                    <button id="startPairPro" class="button-positive">Start</button>
+                </div>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <div class="avatar-sm">
+                    <img id="catAvatar" src="images/tools/cat.svg" alt="cat avatar" />
+                    <img id="dogAvatar" src="images/tools/dog.svg" alt="dog avatar" />
+                    <img id="koiAvatar" src="images/tools/koi.svg" alt="koi avatar" />
+                    <img id="miceAvatar" src="images/tools/mice.svg" alt="mice avatar" />
+                    <img id="rabbitAvatar" src="images/tools/rabbit.svg" alt="rabbit avatar" />
+                </div>
+                <img id="personOneAvatar" class="avatar-md" src="images/tools/cat.svg" alt="cat avatar" />
+                <h1 id="personOneName"></h1>
+                <h2 id="personOneCountdown"></h2>
+            </div>
+            <div class="proj-item bdr-color-default">
+                <div class="avatar-sm">
+                    <img id="butterflyAvatar" src="images/tools/butterfly.svg" alt="butterfly avatar" />
+                    <img id="crabAvatar" src="images/tools/crab.svg" alt="crab avatar" />
+                    <img id="elephantAvatar" src="images/tools/elephant.svg" alt="elephant avatar" />
+                    <img id="frogAvatar" src="images/tools/frog.svg" alt="frog avatar" />
+                    <img id="koalaAvatar" src="images/tools/koala.svg" alt="koala avatar" />
+                </div>
+                <img id="personTwoAvatar" class="avatar-md" src="images/tools/butterfly.svg" alt="butterfly avatar" />
+                <h1 id="personTwoName"></h1>
+                <h2 id="personTwoCountdown"></h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

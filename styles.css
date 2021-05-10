@@ -1,0 +1,599 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  max-width: 1232px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+/*spacing*/
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}
+
+.margin-bottom-64 {
+  margin-bottom: 64px;
+}
+
+.margin-bottom-96 {
+  margin-bottom: 96px;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+button,
+input,
+label,
+li,
+select,
+.tag {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+h4 {
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 0.75rem;
+  margin-bottom: 16px;
+}
+
+h5 {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  font-style: italic;
+}
+
+p {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  margin-bottom: 16px;
+}
+
+li {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+}
+
+a {
+  font-size: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c72F58;
+}
+
+a:active {
+  color: #ff6584;
+}
+
+/*colours*/
+.bg-color-default {
+  background-color: #f5f5f5;
+}
+
+.bg-color-branding {
+  background-color: #e5f4ff;
+}
+
+.bg-color-stationery {
+  background-color: #ecffe6;
+}
+
+.bg-color-website {
+  background-color: #fcf2ff;
+}
+
+.bdr-color-default {
+  border: 2px solid #f5f5f5;
+}
+
+.font-color-secondary {
+  color: #8e8e8e;
+}
+
+/* buttons */
+button {
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 0.5625rem;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #8e8e8e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+.button-positive {
+  background-color: #ecffe6;
+}
+
+.button-neutral {
+  background-color: #e5f4ff;
+}
+
+.button-negative {
+  background-color: #fcf2ff;
+}
+
+button:hover {
+  font-weight: 600;
+}
+
+button:active {
+  font-weight: 600;
+}
+
+button:disabled {
+  color: #8e8e8e;
+}
+
+/* divider */
+hr {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 96px;
+}
+
+.hr-mrg-small {
+  margin-bottom: 64px;
+}
+
+.underline {
+  width: 32px;
+  border: 2px solid #fcf2ff;
+  margin: 8px 0 16px;
+}
+
+/* forms */
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 196px;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 0.5625rem;
+  text-align: left;
+}
+
+input {
+  width: 124px;
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 0.5625rem;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #8e8e8e;
+  border-radius: 4px;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+input[type=number]:disabled {
+  color: #8e8e8e;
+}
+
+input[type=text]:disabled {
+  color: #8e8e8e;
+}
+
+.results-container {
+  width: 100%;
+  height: 196px;
+  margin-bottom: 16px;
+}
+
+select {
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 0.5625rem;
+  color: #202020;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #8e8e8e;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select:after {
+  right: 16px;
+}
+
+ /*icons */
+i.fas {
+  color: #202020;
+}
+
+/*images*/
+.avatar-md {
+  height: 112px;
+  margin-bottom: 8px;
+}
+.avatar-sm img {
+  width: 32px;
+  margin: 8px 4px;
+}
+
+
+/* list */
+ul,
+ol {
+  padding-left: 32px;
+  margin: 0;
+}
+
+/* logos */
+.logos {
+  padding: 8px 0 8px 32px;
+}
+
+.logo {
+  height: 32px;
+  margin: 8px;
+}
+
+/* tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.tag {
+  font-size: 0.4375rem;
+  font-weight: 400;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 12px 12px 0;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 32px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 32px;
+}
+
+.nav-left a {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-right a{
+  margin-left: 32px;
+}
+
+/*header*/
+.title {
+  border-left: 4px solid #c72F58;
+  padding-left: 16px;
+  margin-bottom: 64px;
+}
+
+.title h2 {
+  line-height: 0.75rem;
+}
+
+
+/* project */
+.proj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+
+.proj-desc {
+  width: 192px;
+  margin-bottom: 32px;
+}
+
+.proj-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+}
+
+.proj-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 296px;
+  height: 320px;
+  padding: 16px;
+}
+
+.proj-item:nth-child(-n+2) {
+  margin: 0 16px 16px 0;
+}
+
+.proj-img-lrg {
+  height: 288px;
+}
+
+.proj-img-md {
+  height: 236px;
+  margin-bottom: 16px;
+}
+
+.proj-img-sm {
+  height: 196px;
+  margin-bottom: 16px;
+}
+
+.proj-gif {
+  width: 264px;
+}
+
+
+/* about */
+.about {
+  display: flex;
+}
+
+.about div {
+  margin-bottom: 32px;
+}
+
+.about section {
+  width: 50%;
+  padding: 32px;
+}
+
+.about section:nth-child(1) {
+  background-color: #f5f5f5;
+}
+
+.about section:nth-child(2) {
+  background-color: #e5f4ff;
+}
+
+main.about .signature {
+  width: 160px;
+  padding: 16px 0;
+}
+
+/* a project */
+.a-project-summary {
+  padding: 48px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 96px;
+}
+
+.a-project-summary img {
+  height: 80px;
+  margin-bottom: 24px;
+}
+
+.a-project section {
+  padding: 48px 32px 32px;
+  background-color: #e5f4ff;
+  border-radius: 4px;
+  margin-bottom: 96px;
+}
+
+.a-project section:nth-child(2) {
+  background-color: #ecffe6;
+}
+
+.a-project section:nth-child(3) {
+  background-color: #fcf2ff;
+}
+
+.card {
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.card-item {
+  margin-bottom: 32px;
+}
+
+.card-item img {
+  display: flex;
+  width: 60%;
+  margin: 16px 32px 16px 0;
+}
+
+/*games*/
+
+#totalCountdown {
+  display: none;
+}
+
+/*animations*/
+
+/*atom*/
+.atom {
+  background-color: #ffffff;
+  width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
+}
+.nucleus {
+  fill: #f48fb1;
+}
+
+.electron-one-path, .electron-two-path {
+  fill-opacity: 0;
+  stroke: #8e8e8e;
+  stroke-width: 1;
+}
+
+.electron {
+  fill: #8e8e8e;
+}
+
+.electronAnimation {
+  animation: electron-clockwise 1s infinite linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes electron-clockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*clock*/
+.clock {
+  background-color: #e5f4ff;
+  width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
+}
+
+.clock-face {
+  fill: #ffffff;
+  stroke: #f5f5f5;
+  stroke-width: 2;
+}
+
+.clock-hour-hand {
+  stroke: #8e8e8e;
+  stroke-width: 10;
+  stroke-linecap: round;
+  animation: clockwise 43200s infinite linear;
+}
+
+.clock-minute-hand {
+  stroke: #8e8e8e;
+  stroke-width: 6;
+  stroke-linecap: round;
+  animation: clockwise 3600s infinite linear;
+}
+
+.clock-second-hand {
+  stroke: #f48fb1;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: clockwise 60s infinite linear;
+}
+
+.clockwise {
+  transform-origin: 50% 50%;
+}
+
+@keyframes clockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* responsive design */
+/*@media only screen and (max-width: 784px) {*/
+/*  html {*/
+/*    font-size: 28px;*/
+/*  }*/
+
+/*  nav img {*/
+/*    height: 56px;*/
+/*  }*/
+
+/*  nav div a {*/
+/*    padding-top: 16px;*/
+/*  }*/
+
+/*  main.about {*/
+/*    flex-direction: column;*/
+/*  }*/
+
+/*  main.about section {*/
+/*    width: 100%;*/
+/*  }*/
+
+/*  .card-item img {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (min-width: 1272px) {*/
+/*  html {*/
+/*    font-size: 36px;*/
+/*  }*/
+
+/*  body {*/
+/*    width: 60%;*/
+/*  }*/
+
+/*  .card-item img {*/
+/*    width: 50%;*/
+/*  }*/
+/*}*/
