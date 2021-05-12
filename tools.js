@@ -57,6 +57,8 @@ document.getElementById('resetLoanCal').addEventListener('click', () => {
 
 // Mob pro
 let mobNames = [];
+// Mob pro - Whose next button is disabled in the first instance
+document.getElementById('nextMobName').disabled = true;
 
 // Mob pro - Add names to the list
 document.getElementById('addMobButton').addEventListener('click', () => {
@@ -64,35 +66,44 @@ document.getElementById('addMobButton').addEventListener('click', () => {
     mobNames.push(getMobName);
     document.getElementById('listOfMobNames').innerHTML = `${mobNames}`;
     document.getElementById('addMobName').value = ``;
+    document.getElementById('nextMobName').disabled = false;
 })
 
 // Mob pro - Start mob programming
 document.getElementById('nextMobName').addEventListener('click', () => {
-    // Select a random name
-    const randomNumber = Math.floor(Math.random() * mobNames.length);
-    let selectedMobName = mobNames.splice(randomNumber, 1)[0];
-    document.getElementById('mobName').innerHTML = `${selectedMobName}`;
+        // Select a random name
+        const randomNumber = Math.floor(Math.random() * mobNames.length);
 
-    // Start position
-    let getPersonCodingTime = document.getElementById('personCodingTime').value;
-    document.getElementById('mobNameCountdown').innerText = `${getPersonCodingTime} minutes`;
-    document.getElementById('personCodingTime').disabled = true;
-    document.getElementById('addMobName').disabled = true;
-    document.getElementById('addMobButton').disabled = true;
-    document.getElementById('nextMobName').disabled = true;
+        let selectedMobName = mobNames.splice(randomNumber, 1)[0];
 
-    // Countdown for the selected person
-    setInterval(() => {
-        getPersonCodingTime--;
+        if (selectedMobName !== undefined) {
+            document.getElementById('mobName').innerHTML = `${selectedMobName}`;
 
-        if (getPersonCodingTime >= 0) {
+            // Start position
+            let getPersonCodingTime = document.getElementById('personCodingTime').value;
             document.getElementById('mobNameCountdown').innerText = `${getPersonCodingTime} minutes`;
-        }
+            document.getElementById('personCodingTime').disabled = true;
+            document.getElementById('addMobName').disabled = true;
+            document.getElementById('addMobButton').disabled = true;
+            document.getElementById('nextMobName').disabled = true;
 
-        if (getPersonCodingTime === 0) {
-            document.getElementById('nextMobName').disabled = false;
+            // Countdown for the selected person
+            setInterval(() => {
+                getPersonCodingTime--;
+
+                if (getPersonCodingTime >= 0) {
+                    document.getElementById('mobNameCountdown').innerText = `${getPersonCodingTime} minutes`;
+                }
+
+                if (getPersonCodingTime === 0) {
+                    document.getElementById('nextMobName').disabled = false;
+                }
+            }, 1000);
+        } else {
+            document.getElementById('mobName').innerHTML = `No one left`;
+            document.getElementById('mobNameCountdown').innerText = ``;
+            document.getElementById('nextMobName').disabled = true;
         }
-    }, 1000);
 })
 
 // Mob Pro - Reset
