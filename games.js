@@ -32,3 +32,11 @@ document.getElementById('startRoshambo').addEventListener('click', () => {
 document.getElementById('resetRoshambo').addEventListener('click', () => {
     document.location.reload();
 })
+
+
+// Whack
+const countdownWhack = 10;
+
+document.getElementById('startWhack').addEventListener('click', () => {
+    displayCountdownWhack(countdownWhack);
+})

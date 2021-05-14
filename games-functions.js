@@ -3,7 +3,7 @@
 /**
  * Coin toss function to display every click of the Toss! button
  * @param {number} totalTosses which is the total number of tosses
- * @returns {number} a display of the total number of tosses
+ * @returns {string} displays the total number of tosses
  */
 const displayTotalTosses = (totalTosses) => {
     document.getElementById('totalTosses').innerHTML = `${totalTosses}`;
@@ -12,7 +12,7 @@ const displayTotalTosses = (totalTosses) => {
 /**
  * Coin toss function to display the image based on the randomise number of 1 and 2
  * @param {number} coinToss which is the random number of either 1 or 2
- * @returns display the image of Peter or Benjamin 50p coin
+ * @returns {string} displays the image of a Peter or Benjamin 50p coin
  */
 const displayToss = (coinToss) => {
     if (coinToss === 1) {
@@ -27,7 +27,7 @@ const displayToss = (coinToss) => {
 /**
  * Coin toss function to add and display the counts of Peter and Benjamin
  * @param {number} coinToss which is the random number of either 1 or 2
- * @returns {number} counts for Peter and Benjamin and display the counts
+ * @returns {string} displays the counts for Peter and Benjamin
  */
 const displayCount = (coinToss) => {
     if (coinToss === 1) {
@@ -42,7 +42,7 @@ const displayCount = (coinToss) => {
 /**
  * Coin toss function to calculate and display the probability of Peter and Benjamin
  * @param {number} totalTosses which is the total number of tosses
- * @returns {number} probabilities in percentage of Peter and Benjamin and display the probabilities
+ * @returns {string} displays the probabilities of Peter and Benjamin
  */
 const displayProbability = (totalTosses) => {
     const calculatePeter = (numberOfPeter/totalTosses)*100;
@@ -72,6 +72,7 @@ const getPlayerSelection = () => {
 
 /**
  * Roshambo function to display the output based on the selected string for the player
+ * @param {string} outcomePlayerSelection outcome from the player randomised selection
  * @return {string} containing the image source and alt text content
  */
 const displayPlayerSelection = (outcomePlayerSelection) => {
@@ -104,6 +105,7 @@ const getComputerSelection = () => {
 
 /**
  * Roshambo function to display the output based on the selected string for the computer
+ * @param {string} outcomeComputerSelection outcome from the computer randomised selection
  * @return {string} containing the image source and alt text content
  */
 const displayComputerSelection = (outcomeComputerSelection) => {
@@ -121,6 +123,8 @@ const displayComputerSelection = (outcomeComputerSelection) => {
 
 /**
  * Roshambo function to determine the winner for every randomised paw
+ * @param {string} outcomePlayerSelection outcome from the player randomised selection
+ * @param {string} outcomeComputerSelection outcome from the computer randomised selection
  * @return {string} containing the results
  */
 
@@ -143,4 +147,24 @@ const displayRoshamboResult = (outcomePlayerSelection, outcomeComputerSelection)
     else {
         return 'Something else!';
     }
+}
+
+/**
+ * Whack function to display the countdown for the game
+ * @param {number} countdownWhack is the starting number of seconds for the game
+ * @returns {string} countdown by each second from the starting number
+*/
+
+const displayCountdownWhack = (countdownWhack) => {
+    setInterval(() => {
+        // Start
+        document.getElementById('startWhack').disabled = false;
+
+        // Countdown
+        countdownWhack--;
+        if (countdownWhack >=0) {
+            document.getElementById('countdownWhack').textContent = `${countdownWhack}`;
+            document.getElementById('startWhack').disabled = true;
+        }
+    }, 1000)
 }
