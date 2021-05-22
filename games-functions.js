@@ -165,6 +165,8 @@ const displayCountdownWhack = (countdownWhack) => {
         if (countdownWhack >=0) {
             document.getElementById('countdownWhack').textContent = `${countdownWhack}`;
             document.getElementById('startWhack').disabled = true;
+        } else {
+            document.location.reload();
         }
     }, 1000)
 }

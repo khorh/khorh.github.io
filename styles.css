@@ -432,7 +432,7 @@ nav {
 .about-header-left {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   padding: 48px 32px 32px;
 }
 
@@ -440,10 +440,16 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 40%;
+  width: 30%;
+  word-wrap: anywhere;
   padding: 48px 32px 32px;
 }
 
+.about-header-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
 
 .about {
   display: flex;
