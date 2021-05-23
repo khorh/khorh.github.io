@@ -12,23 +12,6 @@ body {
   margin: 0 auto;
 }
 
-/*spacing*/
-.margin-bottom-16 {
-  margin-bottom: 16px;
-}
-
-.margin-bottom-32 {
-  margin-bottom: 32px;
-}
-
-.margin-bottom-64 {
-  margin-bottom: 64px;
-}
-
-.margin-bottom-96 {
-  margin-bottom: 96px;
-}
-
 /* typography */
 h1,
 h2,
@@ -112,14 +95,6 @@ a:active {
 /*colours*/
 .bg-color-default {
   background-color: #f5f5f5;
-}
-
-.bg-color-astra {
-  background-color: #540b2a;
-}
-
-.bg-color-fetch {
-  background-color: #f0d53e;
 }
 
 .bg-color-branding {

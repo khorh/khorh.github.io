@@ -165,6 +165,35 @@ const displayCountdownWhack = (countdownWhack) => {
         if (countdownWhack >=0) {
             document.getElementById('countdownWhack').textContent = `${countdownWhack}`;
             document.getElementById('startWhack').disabled = true;
+
+            // Mole head appears at random
+            const randomNumberWhack = Math.ceil(Math.random() * 12);
+
+            if (randomNumberWhack === 1) {
+                document.getElementById('moleHeadOne').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 2) {
+                document.getElementById('moleHeadTwo').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 3) {
+                document.getElementById('moleHeadThree').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 4) {
+                document.getElementById('moleHeadFour').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 5) {
+                document.getElementById('moleHeadFive').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 6) {
+                document.getElementById('moleHeadSix').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 7) {
+                document.getElementById('moleHeadSeven').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 8) {
+                document.getElementById('moleHeadEight').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 9) {
+                document.getElementById('moleHeadNine').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 10) {
+                document.getElementById('moleHeadTen').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 11) {
+                document.getElementById('moleHeadEleven').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            } else if (randomNumberWhack === 12) {
+                document.getElementById('moleHeadTwelve').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
+            }
         } else {
             document.location.reload();
         }
