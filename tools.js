@@ -98,7 +98,7 @@ document.getElementById('nextMobName').addEventListener('click', () => {
                 if (getPersonCodingTime === 0) {
                     document.getElementById('nextMobName').disabled = false;
                 }
-            }, 1000);
+            }, 60000);
         } else {
             document.getElementById('mobName').innerHTML = `No one left`;
             document.getElementById('mobNameCountdown').innerText = ``;
@@ -210,7 +210,7 @@ document.getElementById('startPairPro').addEventListener('click', () => {
             clearInterval();
             document.location.reload();
         }
-    }, 1000);
+    }, 60000);
 })
 
 // Pair Pro - Reset
