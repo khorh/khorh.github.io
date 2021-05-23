@@ -114,8 +114,12 @@ a:active {
   background-color: #f5f5f5;
 }
 
+.bg-color-astra {
+  background-color: #540b2a;
+}
+
 .bg-color-fetch {
-  background-color: #F0D53E;
+  background-color: #f0d53e;
 }
 
 .bg-color-branding {
