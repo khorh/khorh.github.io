@@ -166,51 +166,33 @@ const displayCountdownWhack = (countdownWhack) => {
             document.getElementById('countdownWhack').textContent = `${countdownWhack}`;
             document.getElementById('startWhack').disabled = true;
 
-            // Mole head appears at random and with different duration
+            // Mole head appears at random
             const randomNumberWhack = Math.ceil(Math.random() * 12);
-            console.log(randomNumberWhack);
-
-            const minTimeoutWhack = 200;
-            const maxTimeoutWhack = 2000;
-            let randomTimeoutWhack = minTimeoutWhack + Math.ceil(Math.random() * (maxTimeoutWhack - minTimeoutWhack));
-            console.log(randomTimeoutWhack);
 
             if (randomNumberWhack === 1) {
-                document.getElementById('moleHeadOne').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">';
-                setTimeout(function () {document.getElementById('moleHeadOne').innerHTML = '';}, randomTimeoutWhack);
+                document.getElementById('moleHeadOne').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
             } else if (randomNumberWhack === 2) {
-                document.getElementById('moleHeadTwo').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">';
-                setTimeout(function () {document.getElementById('moleHeadTwo').innerHTML = '';}, randomTimeoutWhack);
+                document.getElementById('moleHeadTwo').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
             } else if (randomNumberWhack === 3) {
-                document.getElementById('moleHeadThree').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">';
-                setTimeout(function () {document.getElementById('moleHeadThree').innerHTML = '';}, randomTimeoutWhack);
+                document.getElementById('moleHeadThree').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
             } else if (randomNumberWhack === 4) {
                 document.getElementById('moleHeadFour').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadFour').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 5) {
                 document.getElementById('moleHeadFive').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadFive').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 6) {
                 document.getElementById('moleHeadSix').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadSix').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 7) {
                 document.getElementById('moleHeadSeven').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadSeven').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 8) {
                 document.getElementById('moleHeadEight').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadEight').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 9) {
                 document.getElementById('moleHeadNine').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadNine').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 10) {
                 document.getElementById('moleHeadTen').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadTen').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 11) {
                 document.getElementById('moleHeadEleven').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadEleven').innerHTML = '';}, randomTimeoutWhack);
             } else if (randomNumberWhack === 12) {
                 document.getElementById('moleHeadTwelve').innerHTML = '<img src="images/games/whack-mole.svg" alt="mole\'s head">'
-                setTimeout(function () {document.getElementById('moleHeadTwelve').innerHTML = '';}, randomTimeoutWhack);
             }
         } else {
             document.location.reload();

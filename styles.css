@@ -430,26 +430,31 @@ nav {
   margin-bottom: 16px;
 }
 
-.about-content {
+.about {
   display: flex;
 }
 
-.about-content section {
+.about section {
   width: 50%;
   padding: 32px;
 }
 
-.about-content section:nth-child(1) {
+.about section:nth-child(1) {
   border-left: 2px solid #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
 }
 
-.about-content section:nth-child(2) {
+.about section:nth-child(2) {
   background-color: #e5f4ff;
 }
 
-.about-content div {
+.about div {
   margin-bottom: 32px;
+}
+
+main.about .signature {
+  width: 160px;
+  padding: 16px 0;
 }
 
 /* a project */
