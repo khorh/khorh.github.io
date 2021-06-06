@@ -39,5 +39,4 @@ const countdownWhack = 10;
 
 document.getElementById('startWhack').addEventListener('click', () => {
     displayCountdownWhack(countdownWhack);
-    // displayRandomMoleHead(countdownWhack);
 })
