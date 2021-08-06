@@ -265,19 +265,19 @@ ol {
 
 /* logos */
 .logos {
-  padding: 8px 0 8px 32px;
+  padding: 8px 0;
 }
 
 .logo {
-  height: 32px;
-  margin: 8px;
+  height: 24px;
+  margin: 4px;
 }
 
 /* tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .tag {
