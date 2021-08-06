@@ -384,6 +384,11 @@ nav {
   margin-bottom: 16px;
 }
 
+.proj-img-x-lrg {
+  width: 296px;
+  height: 320px;
+}
+
 .proj-img-lrg {
   height: 288px;
 }
