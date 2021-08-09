@@ -4,16 +4,7 @@
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animations.html" beforeDir="false" afterPath="$PROJECT_DIR$/animations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charity.html" beforeDir="false" afterPath="$PROJECT_DIR$/charity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo-balsamiq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo-confluence.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo-css3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo-excel.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other.html" beforeDir="false" afterPath="$PROJECT_DIR$/other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +80,7 @@
       <workItem from="1623145589307" duration="1529000" />
       <workItem from="1628006031039" duration="16687000" />
       <workItem from="1628168324230" duration="374000" />
-      <workItem from="1628233788135" duration="33597000" />
+      <workItem from="1628233788135" duration="34272000" />
     </task>
     <servers />
   </component>
