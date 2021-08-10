@@ -250,11 +250,11 @@ i.fas {
   height: 112px;
   margin-bottom: 8px;
 }
-
 .avatar-sm img {
   width: 32px;
   margin: 8px 4px;
 }
+
 
 /* list */
 ul,
@@ -315,7 +315,7 @@ nav {
   align-items: flex-end;
 }
 
-.nav-right a {
+.nav-right a{
   margin-left: 32px;
 }
 
@@ -329,6 +329,7 @@ nav {
 .title h2 {
   line-height: 0.75rem;
 }
+
 
 /* project */
 .proj {
@@ -406,6 +407,7 @@ nav {
   height: 100px;
   margin-bottom: 16px;
 }
+
 
 /* about */
 .about-header {
@@ -504,6 +506,7 @@ nav {
 }
 
 /*games*/
+
 #totalCountdown {
   display: none;
 }
@@ -535,6 +538,7 @@ nav {
 }
 
 /*animations*/
+
 /*atom*/
 .atom {
   background-color: #ffffff;
@@ -542,7 +546,6 @@ nav {
   height: 236px;
   margin-bottom: 16px;
 }
-
 .nucleus {
   fill: #f48fb1;
 }
@@ -567,6 +570,7 @@ nav {
     transform: rotate(360deg);
   }
 }
+
 /*clock*/
 .clock {
   background-color: #e5f4ff;
@@ -611,5 +615,3 @@ nav {
     transform: rotate(360deg);
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
