@@ -1,0 +1,29 @@
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 32px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 32px;
+}
+
+.nav-left a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-right a{
+  margin-left: 32px;
+}
