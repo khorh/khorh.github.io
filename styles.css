@@ -1,10 +1,9 @@
 /* avatar */
-.avatar-md {
+.avatar__md {
   height: 112px;
   margin-bottom: 8px;
 }
-
-.avatar-sm img {
+.avatar__sm img {
   width: 32px;
   margin: 8px 4px;
 }
