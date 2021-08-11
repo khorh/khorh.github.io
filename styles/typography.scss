@@ -1,0 +1,64 @@
+@use 'styles/_variables';
+
+//typography
+h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 0.75rem;
+  margin-bottom: 16px;
+}
+
+h5 {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  margin-bottom: 16px;
+}
+
+li {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+}
+
+a {
+  font-size: 0.5rem;
+  font-weight: 500;
+  color: variables.$primary-main-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: variables.$secondary-main-color;
+}
+
+a:active {
+  color: variables.$secondary-dark-color;
+}
