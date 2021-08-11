@@ -394,32 +394,28 @@ a:active {
 }
 
 /* navigation */
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   padding: 64px 0 32px;
 }
-
-.nav-left {
+.nav__left {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   margin-right: 32px;
 }
-
-.nav-left a {
+.nav__left a {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1rem;
 }
-
-.nav-right {
+.nav__right {
   display: flex;
   align-items: flex-end;
 }
-
-.nav-right a {
+.nav__right a {
   margin-left: 32px;
 }
 
