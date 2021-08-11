@@ -60,7 +60,7 @@ let mobNames = [];
 // Mob pro - Whose next button is disabled in the first instance
 document.getElementById('nextMobName').disabled = true;
 
-// Mob pro - Add names to the list
+// Mob pro - Add names to the list.scss
 document.getElementById('addMobButton').addEventListener('click', () => {
     const getMobName = document.getElementById('addMobName').value;
     mobNames.push(getMobName);
@@ -114,7 +114,7 @@ document.getElementById('resetMobPro').addEventListener('click', () => {
 
 // Pair Pro
 
-// Pair Pro - P1 name and avatar
+// Pair Pro - P1 name and avatar.scss
 document.getElementById('personOne').addEventListener('keyup',() => {
     const getPersonOne = document.getElementById('personOne').value;
     document.getElementById('personOneName').textContent = `${getPersonOne}`;
@@ -124,30 +124,30 @@ const personOneAvatar = document.getElementById('personOneAvatar');
 
 document.getElementById('catAvatar').addEventListener('click', () => {
     personOneAvatar.setAttribute('src','images/tools/cat.svg');
-    personOneAvatar.setAttribute('alt','cat avatar');
+    personOneAvatar.setAttribute('alt','cat avatar.scss');
 });
 
 document.getElementById('dogAvatar').addEventListener('click', () => {
     personOneAvatar.setAttribute('src','images/tools/dog.svg');
-    personOneAvatar.setAttribute('alt','dog avatar');
+    personOneAvatar.setAttribute('alt','dog avatar.scss');
 });
 
 document.getElementById('koiAvatar').addEventListener('click', () => {
     personOneAvatar.setAttribute('src','images/tools/koi.svg');
-    personOneAvatar.setAttribute('alt','koi avatar');
+    personOneAvatar.setAttribute('alt','koi avatar.scss');
 });
 
 document.getElementById('miceAvatar').addEventListener('click', () => {
     personOneAvatar.setAttribute('src','images/tools/mice.svg');
-    personOneAvatar.setAttribute('alt','mice avatar');
+    personOneAvatar.setAttribute('alt','mice avatar.scss');
 });
 
 document.getElementById('rabbitAvatar').addEventListener('click', () => {
     personOneAvatar.setAttribute('src','images/tools/rabbit.svg');
-    personOneAvatar.setAttribute('alt','rabbit avatar');
+    personOneAvatar.setAttribute('alt','rabbit avatar.scss');
 });
 
-// Pair Pro - P2 name and avatar
+// Pair Pro - P2 name and avatar.scss
 document.getElementById('personTwo').addEventListener('keyup', () => {
     const getPersonTwo = document.getElementById('personTwo').value;
     document.getElementById('personTwoName').textContent = `${getPersonTwo}`;
@@ -157,27 +157,27 @@ const personTwoAvatar = document.getElementById('personTwoAvatar');
 
 document.getElementById('butterflyAvatar').addEventListener('click', () => {
     personTwoAvatar.setAttribute('src','images/tools/butterfly.svg');
-    personTwoAvatar.setAttribute('alt','butterfly avatar');
+    personTwoAvatar.setAttribute('alt','butterfly avatar.scss');
 });
 
 document.getElementById('crabAvatar').addEventListener('click', () => {
     personTwoAvatar.setAttribute('src','images/tools/crab.svg');
-    personTwoAvatar.setAttribute('alt','crab avatar');
+    personTwoAvatar.setAttribute('alt','crab avatar.scss');
 });
 
 document.getElementById('elephantAvatar').addEventListener('click', () => {
     personTwoAvatar.setAttribute('src','images/tools/elephant.svg');
-    personTwoAvatar.setAttribute('alt','elephant avatar');
+    personTwoAvatar.setAttribute('alt','elephant avatar.scss');
 });
 
 document.getElementById('frogAvatar').addEventListener('click', () => {
     personTwoAvatar.setAttribute('src','images/tools/frog.svg');
-    personTwoAvatar.setAttribute('alt','frog avatar');
+    personTwoAvatar.setAttribute('alt','frog avatar.scss');
 });
 
 document.getElementById('koalaAvatar').addEventListener('click', () => {
     personTwoAvatar.setAttribute('src','images/tools/koala.svg');
-    personTwoAvatar.setAttribute('alt','koala avatar');
+    personTwoAvatar.setAttribute('alt','koala avatar.scss');
 });
 
 // Pair Pro - Start pair programming

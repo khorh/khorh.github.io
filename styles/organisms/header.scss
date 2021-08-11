@@ -1,0 +1,12 @@
+@use '../variables';
+
+/* header */
+.title {
+  border-left: 4px solid variables.$secondary-dark-color;
+  padding-left: 16px;
+  margin-bottom: 64px;
+}
+
+.title h2 {
+  line-height: 0.75rem;
+}

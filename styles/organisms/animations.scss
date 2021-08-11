@@ -1,0 +1,118 @@
+@use '../variables';
+
+/* animations */
+
+/* atom */
+.atom {
+  background-color: variables.$generic-color;
+  width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
+}
+
+.nucleus {
+  fill: variables.$secondary-main-color;
+}
+
+.electron-one-path, .electron-two-path {
+  fill-opacity: 0;
+  stroke: variables.$primary-dark-color;
+  stroke-width: 1;
+}
+
+.electron {
+  fill: variables.$primary-dark-color;
+}
+
+.electronAnimation {
+  animation: electron-clockwise 1s infinite linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes electron-clockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*blender*/
+.blender {
+  width: 264px;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: variables.$generic-color;
+}
+
+.blender h2, .blender h3 {
+  color: variables.$primary-dark-color;
+}
+
+.fa-blender {
+  font-size: 96px;
+  color: variables.$tertiary-main-color;
+}
+.fa-blender:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-1deg); }
+  20% { transform: translate(-6px, 0px) rotate(1deg); }
+  30% { transform: translate(6px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(1deg); }
+  50% { transform: translate(-2px, 4px) rotate(-1deg); }
+  60% { transform: translate(-6px, 2px) rotate(0deg); }
+  70% { transform: translate(6px, 2px) rotate(-1deg); }
+  80% { transform: translate(-2px, -2px) rotate(1deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-1deg); }
+}
+
+/*clock*/
+.clock {
+  background-color: variables.$tertiary-light-color;
+  width: 264px;
+  height: 236px;
+  margin-bottom: 16px;
+}
+
+.clock-face {
+  fill: variables.$generic-color;
+  stroke: variables.$primary-light-color;
+  stroke-width: 2;
+}
+
+.clock-hour-hand {
+  stroke: variables.$primary-dark-color;
+  stroke-width: 12;
+  stroke-linecap: round;
+  animation: clockwise 43200s infinite linear;
+}
+
+.clock-minute-hand {
+  stroke: variables.$primary-dark-color;
+  stroke-width: 6;
+  stroke-linecap: round;
+  animation: clockwise 3600s infinite linear;
+}
+
+.clock-second-hand {
+  stroke: variables.$secondary-main-color;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: clockwise 60s infinite linear;
+}
+
+.clockwise {
+  transform-origin: 50% 50%;
+}
+
+@keyframes clockwise {
+  100% {
+    transform: rotate(360deg);
+  }
+}

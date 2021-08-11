@@ -1,0 +1,25 @@
+@use '../variables';
+
+/* input type */
+input {
+  width: 124px;
+  font-size: 0.4375rem;
+  font-weight: 500;
+  line-height: 0.5625rem;
+  background-color: variables.$generic-color;
+  padding: 8px 16px;
+  border: 1px solid variables.$primary-dark-color;
+  border-radius: 4px;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+input[type=number]:disabled {
+  color: variables.$primary-dark-color;
+}
+
+input[type=text]:disabled {
+  color: variables.$primary-dark-color;
+}

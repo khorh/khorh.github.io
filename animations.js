@@ -19,4 +19,4 @@ document.getElementById('resetAtom').addEventListener('click', () => {
 const dateTime = new Date();
 
 // Create the date and output this on the front-end
-document.getElementById('dateToday').innerHTML = `<h5 class="font-color-secondary">${dateTime.toDateString()}</h5>`;
+document.getElementById('dateToday').innerHTML = `<h5>${dateTime.toDateString()}</h5>`;

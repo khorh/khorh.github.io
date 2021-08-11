@@ -1,0 +1,32 @@
+/* games */
+
+/* whack */
+#totalCountdown {
+  display: none;
+}
+
+.mole-holes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mole-hole {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 96px;
+  height: 80px;
+  margin: 8px 16px;
+}
+
+.mole-hole img {
+  width: 100%;
+}
+
+.mole-head {
+  line-height: 0;
+}

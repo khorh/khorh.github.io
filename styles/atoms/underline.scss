@@ -1,0 +1,8 @@
+@use '../variables';
+
+/* underline */
+.underline {
+  width: 32px;
+  border: 2px solid variables.$secondary-dark-color;
+  margin: 8px 0 16px;
+}
