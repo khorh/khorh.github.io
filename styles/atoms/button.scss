@@ -1,7 +1,7 @@
 @use '../variables';
 
 /* button */
-button {
+.button {
   font-size: 0.4375rem;
   font-weight: 500;
   line-height: 0.5625rem;
@@ -10,28 +10,24 @@ button {
   border: 1px solid variables.$primary-dark-color;
   border-radius: 4px;
   cursor: pointer;
-}
 
-button:hover {
-  font-weight: 600;
-}
+  &:hover {
+    font-weight: 600;
+  }
 
-button:active {
-  font-weight: 600;
-}
+  &:active {
+    font-weight: 600;
+  }
 
-button:disabled {
-  color: variables.$primary-dark-color;
-}
+  &:disabled {
+    color: variables.$primary-dark-color;
+  }
 
-.button-positive {
-  background-color: #ecffe6;
-}
+  &--positive {
+    background-color: variables.$quaternary-light-color;
+  }
 
-.button-neutral {
-  background-color: #e5f4ff;
-}
-
-.button-negative {
-  background-color: #fcf2ff;
+  &--negative {
+    background-color: variables.$secondary-light-color;
+  }
 }

@@ -9,7 +9,7 @@
 }
 
 /* button */
-button {
+.button {
   font-size: 0.4375rem;
   font-weight: 500;
   line-height: 0.5625rem;
@@ -19,28 +19,19 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-
-button:hover {
+.button:hover {
   font-weight: 600;
 }
-
-button:active {
+.button:active {
   font-weight: 600;
 }
-
-button:disabled {
+.button:disabled {
   color: #8e8e8e;
 }
-
-.button-positive {
+.button--positive {
   background-color: #ecffe6;
 }
-
-.button-neutral {
-  background-color: #e5f4ff;
-}
-
-.button-negative {
+.button--negative {
   background-color: #fcf2ff;
 }
 
