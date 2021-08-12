@@ -1,11 +1,11 @@
 /* avatar */
 .avatar {
-  &__md {
+  &--md {
     height: 112px;
     margin-bottom: 8px;
   }
 
-  &__sm {
+  &--sm {
     & img {
       width: 32px;
       margin: 8px 4px;
