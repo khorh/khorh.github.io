@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/molecules/icon-container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charity.html" beforeDir="false" afterPath="$PROJECT_DIR$/charity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/balsamiq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/balsamiq.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/excel.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/excel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/figma.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/figma.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/invisionapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/invisionapp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/paper-pen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/paper-pen.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/powerpoint.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/powerpoint.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/qualtrics.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/qualtrics.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/sketch.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/sketch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/surveymonkey.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/surveymonkey.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logos/word.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/word.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/icon.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/molecules/logos.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/tag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/tag.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +99,7 @@
       <workItem from="1628593998348" duration="53000" />
       <workItem from="1628594053545" duration="1506000" />
       <workItem from="1628610131430" duration="18442000" />
-      <workItem from="1628689080343" duration="18188000" />
+      <workItem from="1628689080343" duration="18299000" />
     </task>
     <servers />
   </component>
