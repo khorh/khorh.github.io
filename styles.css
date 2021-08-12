@@ -357,7 +357,7 @@ a:active {
 }
 /* games */
 /* whack */
-.mole-holes {
+.mole-hole-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -374,12 +374,10 @@ a:active {
   height: 80px;
   margin: 8px 16px;
 }
-
 .mole-hole img {
   width: 100%;
 }
-
-.mole-head {
+.mole-hole__head {
   line-height: 0;
 }
 
