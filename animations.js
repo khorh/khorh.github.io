@@ -2,14 +2,14 @@
 
 // Start the animation of the electrons
 document.querySelector('[data-event="play"]').addEventListener('click', () => {
-    document.getElementById('electronOneAnimation').setAttribute('class',' electron electronAnimation');
-        document.getElementById('electronTwoAnimation').setAttribute('class',' electron electronAnimation');
+    document.getElementById('electronOneAnimation').setAttribute('class','atom__electron atom__electron--animation');
+        document.getElementById('electronTwoAnimation').setAttribute('class','atom__electron atom__electron--animation');
 });
 
 // Reset the animation of the electrons to its original position
 document.getElementById('resetAtom').addEventListener('click', () => {
-    document.getElementById('electronOneAnimation').setAttribute('class',' electron');
-    document.getElementById('electronTwoAnimation').setAttribute('class',' electron');
+    document.getElementById('electronOneAnimation').setAttribute('class','atom__electron');
+    document.getElementById('electronTwoAnimation').setAttribute('class','atom__electron');
 });
 
 

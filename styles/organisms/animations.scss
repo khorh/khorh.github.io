@@ -10,32 +10,38 @@
   margin-bottom: 16px;
 }
 
-.nucleus {
+.atom__nucleus {
   fill: variables.$secondary-main-color;
 }
 
-.electron-one-path, .electron-two-path {
-  fill-opacity: 0;
-  stroke: variables.$primary-dark-color;
-  stroke-width: 1;
-}
-
-.electron {
+.atom__electron {
   fill: variables.$primary-dark-color;
+
+  &--path-one {
+    fill-opacity: 0;
+    stroke: variables.$primary-dark-color;
+    stroke-width: 1;
+  }
+
+  &--path-two {
+    fill-opacity: 0;
+    stroke: variables.$primary-dark-color;
+    stroke-width: 1;
+  }
+
+  &--animation {
+    animation: atom__electron--animation-clockwise 1s infinite linear;
+    transform-origin: 50% 50%;
+  }
 }
 
-.electronAnimation {
-  animation: electron-clockwise 1s infinite linear;
-  transform-origin: 50% 50%;
-}
-
-@keyframes electron-clockwise {
+@keyframes atom__electron--animation-clockwise {
   100% {
     transform: rotate(360deg);
   }
 }
 
-/*blender*/
+/* blender */
 .blender {
   width: 264px;
   height: 236px;
@@ -43,22 +49,29 @@
   flex-direction: column;
   align-items: center;
   background-color: variables.$generic-color;
+
+  &__title {
+    color: variables.$primary-dark-color;
+  }
+
+  &__subtitle {
+    color: variables.$primary-dark-color;
+  }
+
+  &__image {
+    .fa-blender {
+      font-size: 96px;
+      color: variables.$tertiary-main-color;
+
+      &:hover {
+        animation: blender__image--animation 0.3s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
 }
 
-.blender h2, .blender h3 {
-  color: variables.$primary-dark-color;
-}
-
-.fa-blender {
-  font-size: 96px;
-  color: variables.$tertiary-main-color;
-}
-.fa-blender:hover {
-  animation: shake 0.3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
+@keyframes blender__image--animation {
   0% { transform: translate(2px, 2px) rotate(0deg); }
   10% { transform: translate(-2px, -4px) rotate(-1deg); }
   20% { transform: translate(-6px, 0px) rotate(1deg); }
@@ -72,43 +85,43 @@
   100% { transform: translate(2px, -4px) rotate(-1deg); }
 }
 
-/*clock*/
+/* clock */
 .clock {
   background-color: variables.$tertiary-light-color;
   width: 264px;
   height: 236px;
   margin-bottom: 16px;
-}
 
-.clock-face {
-  fill: variables.$generic-color;
-  stroke: variables.$primary-light-color;
-  stroke-width: 2;
-}
+  &__face {
+    fill: variables.$generic-color;
+    stroke: variables.$primary-light-color;
+    stroke-width: 2;
+  }
 
-.clock-hour-hand {
-  stroke: variables.$primary-dark-color;
-  stroke-width: 12;
-  stroke-linecap: round;
-  animation: clockwise 43200s infinite linear;
-}
+  &__hand-hour {
+    stroke: variables.$primary-dark-color;
+    stroke-width: 12;
+    stroke-linecap: round;
+    animation: clockwise 43200s infinite linear;
+  }
 
-.clock-minute-hand {
-  stroke: variables.$primary-dark-color;
-  stroke-width: 6;
-  stroke-linecap: round;
-  animation: clockwise 3600s infinite linear;
-}
+  &__hand-minute {
+    stroke: variables.$primary-dark-color;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: clockwise 3600s infinite linear;
+  }
 
-.clock-second-hand {
-  stroke: variables.$secondary-main-color;
-  stroke-width: 3;
-  stroke-linecap: round;
-  animation: clockwise 60s infinite linear;
-}
+  &__hand-second {
+    stroke: variables.$secondary-main-color;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: clockwise 60s infinite linear;
+  }
 
-.clockwise {
-  transform-origin: 50% 50%;
+  &wise {
+    transform-origin: 50% 50%;
+  }
 }
 
 @keyframes clockwise {
