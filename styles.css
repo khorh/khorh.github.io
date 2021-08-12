@@ -13,7 +13,6 @@
   font-size: 0.4375rem;
   font-weight: 500;
   line-height: 0.5625rem;
-  background-color: #ffffff;
   padding: 8px 16px;
   border: 1px solid #8e8e8e;
   border-radius: 4px;
@@ -28,10 +27,13 @@
 .button:disabled {
   color: #8e8e8e;
 }
-.button--positive {
+.button--state--default {
+  background-color: #ffffff;
+}
+.button--state--positive {
   background-color: #ecffe6;
 }
-.button--negative {
+.button--state--negative {
   background-color: #fcf2ff;
 }
 
