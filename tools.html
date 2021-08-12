@@ -34,7 +34,7 @@
         <h2>TOOLS</h2>
     </header>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>LOAN CAL</h1>
             <hr class="underline" />
             <p>A calculator to show the loan amount with the admin fee and length of repayment</p>
@@ -47,8 +47,8 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div class="proj-item-sm bg-color-default">
+        <div class="proj__desc">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Loan data</h4>
                 <div class="input-container">
                     <div class="input__field">
@@ -69,18 +69,18 @@
                     <button id="calculateLoan" class="button button--state--positive">Calculate</button>
                 </div>
             </div>
-            <div class="proj-item-sm bdr-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--outlined">
                 <h4>Loan amount</h4>
-                <div class="proj-contents-left">
+                <div class="proj__desc-item--alignment--left">
                     <p>Loan amount: £<span id="loanAmount"></span></p>
                     <p>Upfront admin fee: £<span id="upfrontAdminFee"></span></p>
                     <p>Additional admin fee: £<span id="addAdminFee"></span></p>
                     <p>Total loan and fee: £<span id="totalAmount"></span></p>
                 </div>
             </div>
-            <div class="proj-item-sm bdr-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--outlined">
                 <h4>Loan repayment</h4>
-                <div class="proj-contents-left">
+                <div class="proj__desc-item--alignment--left">
                     <p>Expected salary: £<span id="expectedSalary"></span></p>
                     <p>Repayment percentage: <span id="repaymentPercentage"></span>%</p>
                     <p>Repayment per month: £<span id="repaymentPerMonth"></span></p>
@@ -91,7 +91,7 @@
         </div>
     </section>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>MOB PRO</h1>
             <hr class="underline" />
             <p>A tool for mob programming</p>
@@ -105,8 +105,8 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div id="mobNames" class="proj-item-sm bg-color-default">
+        <div class="proj__desc">
+            <div id="mobNames" class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Mob information</h4>
                 <div class="input-container">
                     <div class="input__field">
@@ -125,7 +125,7 @@
                     <button id="nextMobName" class="button button--state--positive">Whose next</button>
                 </div>
             </div>
-            <div class="proj-item-sm bdr-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--outlined">
                 <h4>Go mob!</h4>
                 <h1 id="mobName"></h1>
                 <h2 id="mobNameCountdown"></h2>
@@ -133,7 +133,7 @@
         </div>
     </section>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>PAIR PRO</h1>
             <hr class="underline" />
             <p>A tool to ensure each person has equal amount of time to code during pair programming</p>
@@ -146,8 +146,8 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div id="pairInformation" class="proj-item-sm bg-color-default">
+        <div class="proj__desc">
+            <div id="pairInformation" class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Pair information</h4>
                 <div class="input-container">
                     <div class="input__field">
@@ -168,7 +168,7 @@
                     <button id="startPairPro" class="button button--state--positive">Start</button>
                 </div>
             </div>
-            <div class="proj-item-sm bdr-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--outlined">
                 <div class="avatar--size--sm">
                     <img id="catAvatar" src="images/tools/cat.svg" alt="cat avatar" />
                     <img id="dogAvatar" src="images/tools/dog.svg" alt="dog avatar" />
@@ -180,7 +180,7 @@
                 <h1 id="personOneName"></h1>
                 <h2 id="personOneCountdown"></h2>
             </div>
-            <div class="proj-item-sm bdr-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--outlined">
                 <div class="avatar--size--sm">
                     <img id="butterflyAvatar" src="images/tools/butterfly.svg" alt="butterfly avatar" />
                     <img id="crabAvatar" src="images/tools/crab.svg" alt="crab avatar" />

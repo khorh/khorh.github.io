@@ -35,7 +35,7 @@
         <h2>GAMES</h2>
     </header>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>COIN TOSS</h1>
             <hr class="underline" />
             <p>Click 'Toss' to see the chances of getting Peter or Benjamin Rabbit</p>
@@ -48,15 +48,15 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div class="proj-item-sm bg-color-default">
-                <img id="coinTossImage" class="proj-img-md" src="images/games/coin-toss-peter.png" alt="peter rabbit 50p coin">
+        <div class="proj__desc">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
+                <img id="coinTossImage" class="proj__desc-item--img-size-md" src="images/games/coin-toss-peter.png" alt="peter rabbit 50p coin">
                 <div class="button-container">
                     <button id="resetCoinToss" class="button button--state--negative">Reset</button>
                     <button id="playCoinToss" class="button button--state--positive">Toss!</button>
                 </div>
             </div>
-            <div class="proj-item-sm bg-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Results</h4>
                 <p>Peter: <span id="percentagePeter">0%</span> (<span id="totalPeter">0</span>)</p>
                 <p>Benjamin: <span id="percentageBenjamin">0%</span> (<span id="totalBenjamin">0</span>)</p>
@@ -65,7 +65,7 @@
         </div>
     </section>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>ROSHAMBO</h1>
             <hr class="underline" />
             <p>Click 'Paw!' to see if you can win against the computer on rock, paper and scissors</p>
@@ -78,27 +78,27 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div class="proj-item-sm bg-color-default">
+        <div class="proj__desc">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Player</h4>
-                <img id="playerSelection" class="proj-img-sm" src="images/games/roshambo-rock.png" alt="paw of cat showing a rock sign"/>
+                <img id="playerSelection" class="proj__desc-item--img-size-sm" src="images/games/roshambo-rock.png" alt="paw of cat showing a rock sign"/>
                 <div class="button-container">
                     <button id="resetRoshambo" class="button button--state--negative">Reset</button>
                     <button id="startRoshambo" class="button button--state--positive">Paw!</button>
                 </div>
             </div>
-            <div class="proj-item-sm bg-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Computer</h4>
-                <img id="computerSelection" class="proj-img-sm" src="" alt=""/>
+                <img id="computerSelection" class="proj__desc-item--img-size-sm" src="" alt=""/>
             </div>
-            <div class="proj-item-sm bg-color-default">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Results</h4>
                 <p id="roshamboResult"></p>
             </div>
         </div>
     </section>
     <section class="proj">
-        <div class="proj-desc">
+        <div class="proj__overview">
             <h1>WHACK</h1>
             <hr class="underline" />
             <p>Click 'Start' to see how many moles you can whack in a given time</p>
@@ -111,11 +111,11 @@
                 <i class="icon devicon-javascript-plain colored"></i>
             </div>
         </div>
-        <div class="proj-container">
-            <div class="proj-item-sm bg-color-default">
+        <div class="proj__desc">
+            <div class="proj__desc-item--size--sm proj__desc-item--color--filled">
                 <h4>Whack information</h4>
-                <div class="proj-contents-center">
-                    <img class="proj-img-xsm" src="images/games/whack.svg" alt="mole in a hole with hammer on head"/>
+                <div class="proj__desc-item--alignment--center">
+                    <img class="proj__desc-item--img-size-xsm" src="images/games/whack.svg" alt="mole in a hole with hammer on head"/>
                     <p>Time: <span id="countdownWhack">10</span> seconds</p>
                     <p>Whacks: <span>0</span></p>
                 </div>
@@ -124,7 +124,7 @@
                     <button id="startWhack" class="button button--state--positive">Whack!</button>
                 </div>
             </div>
-            <div class="proj-item-md bg-color-default">
+            <div class="proj__desc-item--size--md proj__desc-item--color--filled">
                 <div class="mole-hole-container">
                     <div class="mole-hole">
                         <div id="moleHeadOne" class="mole-hole__head"></div>
