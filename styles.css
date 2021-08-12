@@ -36,7 +36,7 @@
 }
 
 /* divider */
-hr {
+.divider {
   border: 1px solid #f5f5f5;
   margin-bottom: 96px;
 }

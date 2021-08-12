@@ -1,7 +1,7 @@
 @use '../variables';
 
 /* divider */
-hr {
+.divider {
   border: 1px solid variables.$primary-light-color;
   margin-bottom: 96px;
 }
