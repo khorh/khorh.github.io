@@ -1,11 +1,7 @@
 /* games */
 
 /* whack */
-#totalCountdown {
-  display: none;
-}
-
-.mole-holes {
+.mole-hole-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,12 +17,12 @@
   width: 96px;
   height: 80px;
   margin: 8px 16px;
-}
 
-.mole-hole img {
-  width: 100%;
-}
+  & img {
+    width: 100%;
+  }
 
-.mole-head {
-  line-height: 0;
+  &__head {
+    line-height: 0;
+  }
 }
