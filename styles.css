@@ -189,13 +189,12 @@ a:active {
 }
 
 /* header */
-.title {
+.header {
   border-left: 4px solid #c72F58;
   padding-left: 16px;
   margin-bottom: 64px;
 }
-
-.title h2 {
+.header h2 {
   line-height: 0.75rem;
 }
 
@@ -358,10 +357,6 @@ a:active {
 }
 /* games */
 /* whack */
-#totalCountdown {
-  display: none;
-}
-
 .mole-holes {
   display: flex;
   flex-direction: row;
