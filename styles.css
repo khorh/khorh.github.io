@@ -1,9 +1,9 @@
 /* avatar */
-.avatar--md {
+.avatar--size--md {
   height: 112px;
   margin-bottom: 8px;
 }
-.avatar--sm img {
+.avatar--size--sm img {
   width: 32px;
   margin: 8px 4px;
 }
@@ -69,15 +69,15 @@ input {
   border-radius: 4px;
 }
 
+input[type=text]:disabled {
+  color: #8e8e8e;
+}
+
 input[type=number] {
   text-align: right;
 }
 
 input[type=number]:disabled {
-  color: #8e8e8e;
-}
-
-input[type=text]:disabled {
   color: #8e8e8e;
 }
 
