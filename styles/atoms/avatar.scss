@@ -1,16 +1,12 @@
 /* avatar */
 .avatar {
-  &--size {
-    &--md {
-      height: 112px;
-      margin-bottom: 8px;
-    }
+  &--size--md {
+    height: 112px;
+    margin-bottom: 8px;
+  }
 
-    &--sm {
-      & img {
-        width: 32px;
-        margin: 8px 4px;
-      }
-    }
+  &--size--sm img {
+    width: 32px;
+    margin: 8px 4px;
   }
 }

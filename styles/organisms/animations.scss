@@ -8,30 +8,30 @@
   width: 264px;
   height: 236px;
   margin-bottom: 16px;
-}
 
-.atom__nucleus {
-  fill: variables.$secondary-main-color;
-}
-
-.atom__electron {
-  fill: variables.$primary-dark-color;
-
-  &--path-one {
-    fill-opacity: 0;
-    stroke: variables.$primary-dark-color;
-    stroke-width: 1;
+  &__nucleus {
+    fill: variables.$secondary-main-color;
   }
 
-  &--path-two {
-    fill-opacity: 0;
-    stroke: variables.$primary-dark-color;
-    stroke-width: 1;
-  }
+  &__electron {
+    fill: variables.$primary-dark-color;
 
-  &--animation {
-    animation: atom__electron--animation-clockwise 1s infinite linear;
-    transform-origin: 50% 50%;
+    &--path-one {
+      fill-opacity: 0;
+      stroke: variables.$primary-dark-color;
+      stroke-width: 1;
+    }
+
+    &--path-two {
+      fill-opacity: 0;
+      stroke: variables.$primary-dark-color;
+      stroke-width: 1;
+    }
+
+    &--animation {
+      animation: atom__electron--animation-clockwise 1s infinite linear;
+      transform-origin: 50% 50%;
+    }
   }
 }
 

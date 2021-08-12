@@ -57,12 +57,12 @@ a {
   font-weight: 500;
   color: variables.$primary-main-color;
   text-decoration: none;
-}
 
-a:hover {
-  color: variables.$secondary-main-color;
-}
+  &:hover {
+    color: variables.$secondary-main-color;
+  }
 
-a:active {
-  color: variables.$secondary-dark-color;
+  &:active {
+    color: variables.$secondary-dark-color;
+  }
 }

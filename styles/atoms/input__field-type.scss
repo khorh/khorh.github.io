@@ -10,16 +10,16 @@
   padding: 8px 16px;
   border: 1px solid variables.$primary-dark-color;
   border-radius: 4px;
-}
 
-.input__field-type[type=text]:disabled {
-  color: variables.$primary-dark-color;
-}
+  &[type=text]:disabled {
+    color: variables.$primary-dark-color;
+  }
 
-.input__field-type[type=number] {
-  text-align: right;
-}
+  &[type=number] {
+    text-align: right;
+  }
 
-.input__field-type[type=number]:disabled {
-  color: variables.$primary-dark-color;
+  &[type=number]:disabled {
+    color: variables.$primary-dark-color;
+  }
 }

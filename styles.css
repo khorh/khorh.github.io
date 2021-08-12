@@ -70,15 +70,12 @@
   border: 1px solid #8e8e8e;
   border-radius: 4px;
 }
-
 .input__field-type[type=text]:disabled {
   color: #8e8e8e;
 }
-
 .input__field-type[type=number] {
   text-align: right;
 }
-
 .input__field-type[type=number]:disabled {
   color: #8e8e8e;
 }
@@ -164,11 +161,9 @@ a {
   color: #202020;
   text-decoration: none;
 }
-
 a:hover {
   color: #ff6584;
 }
-
 a:active {
   color: #c72F58;
 }
@@ -227,11 +222,9 @@ a:active {
   height: 236px;
   margin-bottom: 16px;
 }
-
 .atom__nucleus {
   fill: #ff6584;
 }
-
 .atom__electron {
   fill: #8e8e8e;
 }
