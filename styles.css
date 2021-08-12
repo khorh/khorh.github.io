@@ -89,10 +89,10 @@
   margin: 0;
 }
 
-/* logo */
-.logo {
+/* icon */
+.icon {
   height: 24px;
-  margin: 4px;
+  padding-right: 8px;
 }
 
 /* tag */
@@ -208,9 +208,9 @@ a:active {
   margin-bottom: 16px;
 }
 
-/* logos */
-.logos {
-  padding: 8px 0;
+/* icon-container */
+.icon-container {
+  padding-bottom: 16px;
 }
 
 /* tags */
