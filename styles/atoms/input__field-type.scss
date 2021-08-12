@@ -1,7 +1,7 @@
 @use '../variables';
 
 /* input type */
-input {
+.input__field-type {
   width: 124px;
   font-size: 0.4375rem;
   font-weight: 500;
@@ -12,14 +12,14 @@ input {
   border-radius: 4px;
 }
 
-input[type=number] {
-  text-align: right;
-}
-
-input[type=number]:disabled {
+.input__field-type[type=text]:disabled {
   color: variables.$primary-dark-color;
 }
 
-input[type=text]:disabled {
+.input__field-type[type=number] {
+  text-align: right;
+}
+
+.input__field-type[type=number]:disabled {
   color: variables.$primary-dark-color;
 }

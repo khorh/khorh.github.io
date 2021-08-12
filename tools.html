@@ -51,17 +51,17 @@
             <div class="proj-item-sm bg-color-default">
                 <h4>Loan data</h4>
                 <div class="input-container">
-                    <div class="input-field">
-                        <label for="loan">Loan amount £* :</label>
-                        <input id="loan" type="number" name="loan-amount" required min="1" max="10000" />
+                    <div class="input__field">
+                        <label for="loan" class="input__field-label">Loan amount £* :</label>
+                        <input id="loan" class="input__field-type" type="number" name="loan-amount" required min="1" max="10000" />
                     </div>
-                    <div class="input-field">
-                        <label for="salary">Expected salary £* :</label>
-                        <input id="salary" type="number" name="expected-salary" required min="0" value="25000" />
+                    <div class="input__field">
+                        <label for="salary" class="input__field-label">Expected salary £* :</label>
+                        <input id="salary" class="input__field-type" type="number" name="expected-salary" required min="0" value="25000" />
                     </div>
-                    <div class="input-field">
-                        <label for="repayment">Repayment %* :</label>
-                        <input id="repayment" type="number" name="repayment-percentage" required min="10" value="10" />
+                    <div class="input__field">
+                        <label for="repayment" class="input__field-label">Repayment %* :</label>
+                        <input id="repayment" class="input__field-type" type="number" name="repayment-percentage" required min="10" value="10" />
                     </div>
                 </div>
                 <div class="button-container">
@@ -109,13 +109,13 @@
             <div id="mobNames" class="proj-item-sm bg-color-default">
                 <h4>Mob information</h4>
                 <div class="input-container">
-                    <div class="input-field">
-                        <label for="personCodingTime">Time per person (minutes)*:</label>
-                        <input id="personCodingTime" type="number" name="person-coding-time" min="0" />
+                    <div class="input__field">
+                        <label for="personCodingTime" class="input__field-label">Time per person (minutes)*:</label>
+                        <input id="personCodingTime" class="input__field-type" type="number" name="person-coding-time" min="0" />
                     </div>
-                    <div class="input-field">
-                        <label for="addMobName">Name*:</label>
-                        <input id="addMobName" type="text" name="addMobName" required />
+                    <div class="input__field">
+                        <label for="addMobName" class="input__field-label">Name*:</label>
+                        <input id="addMobName" class="input__field-type" type="text" name="addMobName" required />
                         <button id="addMobButton" class="button button--state--positive">+</button>
                     </div>
                     <p id="listOfMobNames"></p>
@@ -150,17 +150,17 @@
             <div id="pairInformation" class="proj-item-sm bg-color-default">
                 <h4>Pair information</h4>
                 <div class="input-container">
-                    <div class="input-field">
-                        <label for="personOne">P1 name:</label>
-                        <input id="personOne" type="text" name="person-one" />
+                    <div class="input__field">
+                        <label for="personOne" class="input__field-label">P1 name:</label>
+                        <input id="personOne" class="input__field-type" type="text" name="person-one" />
                     </div>
-                    <div class="input-field">
-                        <label for="personTwo">P2 name:</label>
-                        <input id="personTwo" type="text" name="person-two" />
+                    <div class="input__field">
+                        <label for="personTwo" class="input__field-label">P2 name:</label>
+                        <input id="personTwo" class="input__field-type" type="text" name="person-two" />
                     </div>
-                    <div class="input-field">
-                        <label for="totalCodingTime">Total time (minutes)*:</label>
-                        <input id="totalCodingTime" type="number" name="total-coding-time" min="0" />
+                    <div class="input__field">
+                        <label for="totalCodingTime" class="input__field-label">Total time (minutes)*:</label>
+                        <input id="totalCodingTime" class="input__field-type" type="number" name="total-coding-time" min="0" />
                     </div>
                 </div>
                 <div class="button-container">
