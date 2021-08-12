@@ -107,10 +107,14 @@
 }
 
 /* typography */
+h1, h2, h3, h4, h5, p, li, a {
+  margin: 0;
+}
+
 h1 {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 h2 {
