@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +55,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/abstracts" />
+      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/styles/organisms" />
       <recent name="$PROJECT_DIR$/styles/atoms" />
       <recent name="$PROJECT_DIR$/styles/molecules" />
-      <recent name="$PROJECT_DIR$/styles/pages" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -99,7 +99,7 @@
       <workItem from="1628593998348" duration="53000" />
       <workItem from="1628594053545" duration="1506000" />
       <workItem from="1628610131430" duration="18442000" />
-      <workItem from="1628689080343" duration="31445000" />
+      <workItem from="1628689080343" duration="42578000" />
     </task>
     <servers />
   </component>
