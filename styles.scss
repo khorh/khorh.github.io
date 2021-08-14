@@ -19,7 +19,8 @@
 @use 'styles/organisms/navigation';
 @use 'styles/organisms/projects';
 @use 'styles/pages/about';
-@use 'styles/variables';
+@use 'styles/abstracts/mixins';
+@use 'styles/abstracts/variables';
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
-@use '../variables';
+@use '../abstracts/variables';
 
 /* button */
 .button {
@@ -28,6 +28,10 @@
 
   &--state--positive {
     background-color: variables.$quaternary-light-color;
+  }
+
+  &--state--neutral {
+    background-color: variables.$tertiary-light-color;
   }
 
   &--state--negative {

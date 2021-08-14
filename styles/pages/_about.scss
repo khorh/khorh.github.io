@@ -1,16 +1,17 @@
-@use '../variables';
+@use '../abstracts';
 
 /* about */
 .about-header {
   display: flex;
-  justify-content: space-between;
-  background-color: variables.$primary-light-color;
+  background-color: abstracts.$primary-light-color;
 
   &__left {
-    display: flex;
-    flex-direction: column;
     width: 70%;
     padding: 48px 32px 32px;
+
+    @include abstracts.mobile {
+      width: 100%;
+    }
   }
 
   &__right {
@@ -37,12 +38,12 @@
     padding: 32px;
 
     &:nth-child(1) {
-      border-left: 2px solid variables.$primary-light-color;
-      border-bottom: 2px solid variables.$primary-light-color;
+      border-left: 2px solid abstracts.$primary-light-color;
+      border-bottom: 2px solid abstracts.$primary-light-color;
     }
 
     &:nth-child(2) {
-      background-color: variables.$tertiary-light-color;
+      background-color: abstracts.$tertiary-light-color;
     }
   }
 
