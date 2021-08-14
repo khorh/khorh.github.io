@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* input type */
 .input__field-type {
@@ -6,13 +6,13 @@
   font-size: 0.4375rem;
   font-weight: 500;
   line-height: 0.5625rem;
-  background-color: variables.$generic-color;
+  background-color: $generic-color;
   padding: 8px 16px;
-  border: 1px solid variables.$primary-dark-color;
+  border: 1px solid $primary-dark-color;
   border-radius: 4px;
 
   &[type=text]:disabled {
-    color: variables.$primary-dark-color;
+    color: $primary-dark-color;
   }
 
   &[type=number] {
@@ -20,6 +20,6 @@
   }
 
   &[type=number]:disabled {
-    color: variables.$primary-dark-color;
+    color: $primary-dark-color;
   }
 }

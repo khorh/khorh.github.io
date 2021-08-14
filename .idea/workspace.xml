@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_input__field-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_input__field-type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_tag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_tag.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_underline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_underline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/organisms/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/organisms/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/organisms/_projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_about.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +109,7 @@
       <workItem from="1628593998348" duration="53000" />
       <workItem from="1628594053545" duration="1506000" />
       <workItem from="1628610131430" duration="18442000" />
-      <workItem from="1628689080343" duration="42578000" />
+      <workItem from="1628689080343" duration="43876000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* divider */
 .divider {
-  border: 1px solid variables.$primary-light-color;
+  border: 1px solid $primary-light-color;
   margin-bottom: 96px;
 }

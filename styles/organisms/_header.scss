@@ -1,8 +1,8 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* header */
 .header {
-  border-left: 4px solid variables.$secondary-dark-color;
+  border-left: 4px solid $secondary-dark-color;
   padding-left: 16px;
   margin-bottom: 64px;
 

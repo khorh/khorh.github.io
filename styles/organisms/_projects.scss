@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* project */
 .proj {
@@ -39,11 +39,11 @@
     }
 
     &--color--filled {
-      background-color: variables.$primary-light-color;
+      background-color: $primary-light-color;
     }
 
     &--color--outlined {
-      border: 2px solid variables.$primary-light-color;
+      border: 2px solid $primary-light-color;
     }
 
     &--alignment--left {

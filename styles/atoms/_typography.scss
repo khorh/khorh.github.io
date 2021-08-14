@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* typography */
 h1, h2, h3, h4, h5, p, li, a {
@@ -55,14 +55,14 @@ li {
 a {
   font-size: 0.5rem;
   font-weight: 500;
-  color: variables.$primary-main-color;
+  color: $primary-main-color;
   text-decoration: none;
 
   &:hover {
-    color: variables.$secondary-main-color;
+    color: $secondary-main-color;
   }
 
   &:active {
-    color: variables.$secondary-dark-color;
+    color: $secondary-dark-color;
   }
 }

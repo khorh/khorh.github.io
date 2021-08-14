@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts' as *;
 
 /* button */
 .button {
@@ -6,7 +6,7 @@
   font-weight: 500;
   line-height: 0.5625rem;
   padding: 8px 16px;
-  border: 1px solid variables.$primary-dark-color;
+  border: 1px solid $primary-dark-color;
   border-radius: 4px;
   cursor: pointer;
 
@@ -19,22 +19,22 @@
   }
 
   &:disabled {
-    color: variables.$primary-dark-color;
+    color: $primary-dark-color;
   }
 
   &--state--default {
-    background-color: variables.$generic-color;
+    background-color: $generic-color;
   }
 
   &--state--positive {
-    background-color: variables.$quaternary-light-color;
+    background-color: $quaternary-light-color;
   }
 
   &--state--neutral {
-    background-color: variables.$tertiary-light-color;
+    background-color: $tertiary-light-color;
   }
 
   &--state--negative {
-    background-color: variables.$secondary-light-color;
+    background-color: $secondary-light-color;
   }
 }

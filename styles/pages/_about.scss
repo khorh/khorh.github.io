@@ -1,15 +1,15 @@
-@use '../abstracts';
+@use '../abstracts' as *;
 
 /* about */
 .about-header {
   display: flex;
-  background-color: abstracts.$primary-light-color;
+  background-color: $primary-light-color;
 
   &__left {
     width: 70%;
     padding: 48px 32px 32px;
 
-    @include abstracts.mobile {
+    @include mobile {
       width: 100%;
     }
   }
@@ -38,12 +38,12 @@
     padding: 32px;
 
     &:nth-child(1) {
-      border-left: 2px solid abstracts.$primary-light-color;
-      border-bottom: 2px solid abstracts.$primary-light-color;
+      border-left: 2px solid $primary-light-color;
+      border-bottom: 2px solid $primary-light-color;
     }
 
     &:nth-child(2) {
-      background-color: abstracts.$tertiary-light-color;
+      background-color: $tertiary-light-color;
     }
   }
 
