@@ -406,6 +406,13 @@ a:active {
 .nav__right a {
   margin-left: 32px;
 }
+@media (max-width: 575px) {
+  .nav__right {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 
 /* project */
 .proj {
