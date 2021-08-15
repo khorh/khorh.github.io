@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 /* navigation */
 .nav {
   display: flex;
@@ -16,11 +18,16 @@
       font-weight: 600;
       line-height: 1rem;
     }
+
+    @include xs-screen {
+      display: none;
+    }
   }
 
   &__right {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     & a {
       margin-left: 32px;

@@ -393,9 +393,15 @@ a:active {
   font-weight: 600;
   line-height: 1rem;
 }
+@media (max-width: 575px) {
+  .nav__left {
+    display: none;
+  }
+}
 .nav__right {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .nav__right a {
   margin-left: 32px;
