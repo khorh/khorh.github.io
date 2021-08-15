@@ -46,6 +46,12 @@
   margin-bottom: 96px;
 }
 
+/* icon */
+.icon {
+  height: 24px;
+  padding-right: 8px;
+}
+
 /* input field */
 .input__field {
   display: flex;
@@ -87,12 +93,6 @@
 .list {
   padding-left: 32px;
   margin: 0;
-}
-
-/* icon */
-.icon {
-  height: 24px;
-  padding-right: 8px;
 }
 
 /* tag */
@@ -186,14 +186,9 @@ a:active {
   line-height: 0;
 }
 
-/* header */
-.header {
-  border-left: 4px solid #c72F58;
-  padding-left: 16px;
-  margin-bottom: 64px;
-}
-.header h2 {
-  line-height: 0.75rem;
+/* icon-container */
+.icon-container {
+  padding-bottom: 16px;
 }
 
 /* input-container */
@@ -203,11 +198,6 @@ a:active {
   flex-direction: column;
   height: 196px;
   margin-bottom: 16px;
-}
-
-/* icon-container */
-.icon-container {
-  padding-bottom: 16px;
 }
 
 /* tag-container */
@@ -375,6 +365,16 @@ a:active {
   line-height: 0;
 }
 
+/* header */
+.header {
+  border-left: 4px solid #c72F58;
+  padding-left: 16px;
+  margin-bottom: 64px;
+}
+.header h2 {
+  line-height: 0.75rem;
+}
+
 /* navigation */
 .nav {
   display: flex;
@@ -477,13 +477,19 @@ a:active {
   display: flex;
   background-color: #f5f5f5;
 }
+@media (max-width: 575px) {
+  .about-header {
+    flex-direction: column-reverse;
+  }
+}
 .about-header__left {
   width: 70%;
   padding: 48px 32px 32px;
 }
-@media (max-width: 599px) {
+@media (max-width: 575px) {
   .about-header__left {
     width: 100%;
+    padding: 0 32px 32px;
   }
 }
 .about-header__right {
@@ -494,6 +500,12 @@ a:active {
   word-wrap: anywhere;
   padding: 48px 32px 32px;
 }
+@media (max-width: 575px) {
+  .about-header__right {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
 .about-header__right-name {
   font-size: 0.75rem;
   font-weight: 600;
@@ -503,13 +515,29 @@ a:active {
 .about-content {
   display: flex;
 }
+@media (max-width: 575px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
 .about-content__section {
   width: 50%;
   padding: 32px;
 }
+@media (max-width: 575px) {
+  .about-content__section {
+    width: 100%;
+  }
+}
 .about-content__section:nth-child(1) {
   border-left: 2px solid #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
+}
+@media (max-width: 575px) {
+  .about-content__section:nth-child(1) {
+    border-bottom: none;
+    border-right: 2px solid #f5f5f5;
+  }
 }
 .about-content__section:nth-child(2) {
   background-color: #e5f4ff;

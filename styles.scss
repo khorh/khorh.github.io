@@ -1,26 +1,8 @@
-@use 'styles/atoms/avatar';
-@use 'styles/atoms/button';
-@use 'styles/atoms/divider';
-@use 'styles/atoms/input__field';
-@use 'styles/atoms/input__field-label';
-@use 'styles/atoms/input__field-type';
-@use 'styles/atoms/list';
-@use 'styles/atoms/icon';
-@use 'styles/atoms/tag';
-@use 'styles/atoms/typography';
-@use 'styles/atoms/underline';
-@use 'styles/molecules/button-container';
-@use 'styles/organisms/header';
-@use 'styles/molecules/input-container';
-@use 'styles/molecules/icon-container';
-@use 'styles/molecules/tag-container';
-@use 'styles/organisms/animations';
-@use 'styles/organisms/games';
-@use 'styles/organisms/navigation';
-@use 'styles/organisms/projects';
-@use 'styles/pages/about';
-@use 'styles/abstracts/mixins';
-@use 'styles/abstracts/variables';
+@use 'styles/abstracts' as *;
+@use 'styles/atoms';
+@use 'styles/molecules';
+@use 'styles/organisms';
+@use 'styles/pages';
 
 * {
   margin: 0;
@@ -30,8 +12,8 @@
 
 html {
   font-size: 32px;
-  font-family: variables.$font-family-primary;
-  color: variables.$primary-main-color;
+  font-family: $font-family-primary;
+  color: $primary-main-color;
 }
 
 body {

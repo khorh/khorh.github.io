@@ -5,12 +5,17 @@
   display: flex;
   background-color: $primary-light-color;
 
+  @include xs-screen {
+    flex-direction: column-reverse;
+  }
+
   &__left {
     width: 70%;
     padding: 48px 32px 32px;
 
-    @include mobile {
+    @include xs-screen {
       width: 100%;
+      padding: 0 32px 32px;
     }
   }
 
@@ -21,6 +26,11 @@
     width: 30%;
     word-wrap: anywhere;
     padding: 48px 32px 32px;
+
+    @include xs-screen {
+      width: 100%;
+      align-items: flex-start;
+    }
   }
 
   &__right-name {
@@ -33,13 +43,26 @@
 .about-content {
   display: flex;
 
+  @include xs-screen {
+    flex-direction: column;
+  }
+
   &__section {
     width: 50%;
     padding: 32px;
 
+    @include xs-screen {
+      width: 100%;
+    }
+
     &:nth-child(1) {
       border-left: 2px solid $primary-light-color;
       border-bottom: 2px solid $primary-light-color;
+
+      @include xs-screen {
+        border-bottom: none;
+        border-right: 2px solid $primary-light-color;
+      }
     }
 
     &:nth-child(2) {
