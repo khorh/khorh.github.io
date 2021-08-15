@@ -10,6 +10,10 @@
   &__overview {
     width: 192px;
     margin-bottom: 32px;
+
+    @include xs-screen {
+      width: 100%;
+    }
   }
 
   &__desc {
@@ -27,15 +31,28 @@
       height: 320px;
       padding: 16px;
 
+      @include xs-screen {
+        width: 100%;
+      }
+
       &:nth-child(-n+2) {
         margin: 0 16px 16px 0;
+
+        @include xs-screen {
+          margin: 0 0 16px 0;
+        }
       }
+
     }
 
     &--size--md {
       width: 608px;
       height: 320px;
       padding: 16px;
+
+      @include xs-screen {
+        width: 100%;
+      }
     }
 
     &--color--filled {
