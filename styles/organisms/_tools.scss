@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+/* tools */
+.calculator {
+  width: 192px;
+  height: 288px;
+  border: 1px solid $primary-dark-color;
+  border-radius: 16px;
+  background-color: $generic-color;
+
+  &__button {
+    stroke: $primary-dark-color;
+    stroke-width: 1;
+
+    &--standard {
+      fill: $generic-color;
+    }
+
+    &--all-clear {
+      fill: $secondary-light-color;
+    }
+
+    &--math-operator {
+      fill: $tertiary-light-color;
+    }
+
+    &--equals {
+      fill: $quaternary-light-color;
+    }
+  }
+}

@@ -505,6 +505,31 @@ a:active {
   height: 320px;
 }
 
+/* tools */
+.calculator {
+  width: 192px;
+  height: 288px;
+  border: 1px solid #8e8e8e;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.calculator__button {
+  stroke: #8e8e8e;
+  stroke-width: 1;
+}
+.calculator__button--standard {
+  fill: #ffffff;
+}
+.calculator__button--all-clear {
+  fill: #fcf2ff;
+}
+.calculator__button--math-operator {
+  fill: #e5f4ff;
+}
+.calculator__button--equals {
+  fill: #ecffe6;
+}
+
 /* about */
 .about-header {
   display: flex;
