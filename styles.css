@@ -393,7 +393,7 @@ a:active {
   font-weight: 600;
   line-height: 1rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .nav__left {
     display: none;
   }
@@ -424,7 +424,7 @@ a:active {
   width: 192px;
   margin-bottom: 32px;
 }
-@media (max-width: 575px) {
+@media (max-width: 1231px) {
   .proj__overview {
     width: 100%;
   }
@@ -442,7 +442,7 @@ a:active {
   height: 320px;
   padding: 16px;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .proj__desc-item--size--sm {
     width: 100%;
   }
@@ -450,7 +450,7 @@ a:active {
 .proj__desc-item--size--sm:nth-child(-n+2) {
   margin: 0 16px 16px 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .proj__desc-item--size--sm:nth-child(-n+2) {
     margin: 0 0 16px 0;
   }
@@ -460,7 +460,7 @@ a:active {
   height: 320px;
   padding: 16px;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .proj__desc-item--size--md {
     width: 100%;
     height: auto;
@@ -510,7 +510,7 @@ a:active {
   display: flex;
   background-color: #f5f5f5;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-header {
     flex-direction: column-reverse;
   }
@@ -519,7 +519,7 @@ a:active {
   width: 70%;
   padding: 48px 32px 32px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-header__left {
     width: 100%;
     padding: 0 32px 32px;
@@ -533,7 +533,7 @@ a:active {
   word-wrap: anywhere;
   padding: 48px 32px 32px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-header__right {
     width: 100%;
     align-items: flex-start;
@@ -548,7 +548,7 @@ a:active {
 .about-content {
   display: flex;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-content {
     flex-direction: column;
   }
@@ -557,7 +557,7 @@ a:active {
   width: 50%;
   padding: 32px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-content__section {
     width: 100%;
   }
@@ -566,7 +566,7 @@ a:active {
   border-left: 2px solid #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .about-content__section:nth-child(1) {
     border-bottom: none;
     border-right: 2px solid #f5f5f5;

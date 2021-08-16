@@ -11,7 +11,7 @@
     width: 192px;
     margin-bottom: 32px;
 
-    @include xs-screen {
+    @include lg-screen {
       width: 100%;
     }
   }
@@ -31,14 +31,14 @@
       height: 320px;
       padding: 16px;
 
-      @include xs-screen {
+      @include md-screen {
         width: 100%;
       }
 
       &:nth-child(-n+2) {
         margin: 0 16px 16px 0;
 
-        @include xs-screen {
+        @include md-screen {
           margin: 0 0 16px 0;
         }
       }
@@ -50,7 +50,7 @@
       height: 320px;
       padding: 16px;
 
-      @include xs-screen {
+      @include md-screen {
         width: 100%;
         height: auto;
       }

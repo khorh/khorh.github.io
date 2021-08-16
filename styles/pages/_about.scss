@@ -5,7 +5,7 @@
   display: flex;
   background-color: $primary-light-color;
 
-  @include xs-screen {
+  @include sm-screen {
     flex-direction: column-reverse;
   }
 
@@ -13,7 +13,7 @@
     width: 70%;
     padding: 48px 32px 32px;
 
-    @include xs-screen {
+    @include sm-screen {
       width: 100%;
       padding: 0 32px 32px;
     }
@@ -27,7 +27,7 @@
     word-wrap: anywhere;
     padding: 48px 32px 32px;
 
-    @include xs-screen {
+    @include sm-screen {
       width: 100%;
       align-items: flex-start;
     }
@@ -43,7 +43,7 @@
 .about-content {
   display: flex;
 
-  @include xs-screen {
+  @include sm-screen {
     flex-direction: column;
   }
 
@@ -51,7 +51,7 @@
     width: 50%;
     padding: 32px;
 
-    @include xs-screen {
+    @include sm-screen {
       width: 100%;
     }
 
@@ -59,7 +59,7 @@
       border-left: 2px solid $primary-light-color;
       border-bottom: 2px solid $primary-light-color;
 
-      @include xs-screen {
+      @include sm-screen {
         border-bottom: none;
         border-right: 2px solid $primary-light-color;
       }
