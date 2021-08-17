@@ -2,30 +2,62 @@
 
 /* tools */
 .calculator {
-  width: 192px;
+  width: 208px;
   height: 288px;
+  padding: 16px;
   border: 1px solid $primary-dark-color;
   border-radius: 16px;
   background-color: $generic-color;
 
+  &__result {
+    text-align: right;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__button {
-    stroke: $primary-dark-color;
-    stroke-width: 1;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 0.4375rem;
+    font-weight: 500;
+    line-height: 0.5625rem;
+    border: 1px solid $primary-dark-color;
+    margin: 4px;
+    cursor: pointer;
 
-    &--standard {
-      fill: $generic-color;
+    &--size--sm {
+      width: 32px;
+      justify-content: center;
+      padding: 8px 16px;
+      border-radius: 50%;
     }
 
-    &--all-clear {
-      fill: $secondary-light-color;
+    &--size--md {
+      width: 78px;
+      justify-content: start;
+      padding: 8px 16px 8px 12px;
+      border-radius: 32px;
     }
 
-    &--math-operator {
-      fill: $tertiary-light-color;
+    &--state--number {
+      background-color: $generic-color;
     }
 
-    &--equals {
-      fill: $quaternary-light-color;
+    &--state--all-clear {
+      background-color: $secondary-light-color;
+    }
+
+    &--state--math-operator {
+      background-color: $tertiary-light-color;
+    }
+
+    &--state--equals {
+      background-color: $quaternary-light-color;
     }
   }
 }
