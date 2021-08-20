@@ -27,11 +27,13 @@ btnArr.forEach(btn => btn.addEventListener('click', event => {
     currentValueArr.push(event.target.value);
     const currentValue = currentValueArr.join('');
     calResult.innerHTML = `${currentValue}`;
+    calBtnAllClear.innerHTML = `C`;
 
     // all clear functionality - resets to zero on the screen
     calBtnAllClear.addEventListener('click', () => {
         currentValueArr = [];
         calResult.innerHTML = `0`;
+        calBtnAllClear.innerHTML = `AC`;
     });
 
     // percentage functionality - changes the numbers on the screen into a percentage
