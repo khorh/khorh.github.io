@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 /* tools */
-.calculator {
+.cal {
   width: 208px;
   height: 288px;
   padding: 16px;
@@ -13,13 +13,13 @@
     text-align: right;
   }
 
-  &__button-container {
+  &__btn-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  &__button {
+  &__btn {
     height: 32px;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
       background-color: $secondary-light-color;
     }
 
-    &--state--math-operator {
+    &--state--math {
       background-color: $tertiary-light-color;
     }
 

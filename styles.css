@@ -506,7 +506,7 @@ a:active {
 }
 
 /* tools */
-.calculator {
+.cal {
   width: 208px;
   height: 288px;
   padding: 16px;
@@ -514,15 +514,15 @@ a:active {
   border-radius: 16px;
   background-color: #ffffff;
 }
-.calculator__result {
+.cal__result {
   text-align: right;
 }
-.calculator__button-container {
+.cal__btn-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.calculator__button {
+.cal__btn {
   height: 32px;
   display: flex;
   align-items: center;
@@ -533,28 +533,28 @@ a:active {
   margin: 4px;
   cursor: pointer;
 }
-.calculator__button--size--sm {
+.cal__btn--size--sm {
   width: 32px;
   justify-content: center;
   padding: 8px 16px;
   border-radius: 50%;
 }
-.calculator__button--size--md {
+.cal__btn--size--md {
   width: 78px;
   justify-content: start;
   padding: 8px 16px 8px 12px;
   border-radius: 32px;
 }
-.calculator__button--state--number {
+.cal__btn--state--number {
   background-color: #ffffff;
 }
-.calculator__button--state--all-clear {
+.cal__btn--state--all-clear {
   background-color: #fcf2ff;
 }
-.calculator__button--state--math-operator {
+.cal__btn--state--math {
   background-color: #e5f4ff;
 }
-.calculator__button--state--equals {
+.cal__btn--state--equals {
   background-color: #ecffe6;
 }
 

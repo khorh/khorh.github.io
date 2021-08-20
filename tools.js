@@ -1,5 +1,38 @@
 // Tools using procedural programming
 
+// Calculator
+// Calculator buttons
+const calResult = document.querySelector('#calResult');
+const calBtnAllClear = document.querySelector('#calBtnAllClear');
+
+const calBtn1 = document.querySelector('#calBtn1');
+const calBtn2 = document.querySelector('#calBtn2');
+const calBtn3 = document.querySelector('#calBtn3');
+const calBtn4 = document.querySelector('#calBtn4');
+const calBtn5 = document.querySelector('#calBtn5');
+const calBtn6 = document.querySelector('#calBtn6');
+const calBtn7 = document.querySelector('#calBtn7');
+const calBtn8 = document.querySelector('#calBtn8');
+const calBtn9 = document.querySelector('#calBtn9');
+
+
+// Resets to 0
+calBtnAllClear.addEventListener('click', () => {
+    calResult.innerHTML = `0`;
+});
+
+// An empty array to push numbers or operators as separate items
+const currentValueArr = [];
+
+const btnArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9];
+
+btnArr.forEach(btn => btn.addEventListener('click', event => {
+    currentValueArr.push(event.target.value);
+    const currentValue = currentValueArr.join('');
+    calResult.innerHTML = `${currentValue}`;
+}));
+
+
 // Loan calculator
 
 // Calculate loan
