@@ -4,7 +4,7 @@
 // Calculator buttons
 const calResult = document.querySelector('#calResult');
 const calBtnAllClear = document.querySelector('#calBtnAllClear');
-
+const calBtnPercentage = document.querySelector('#calBtnPercentage');
 const calBtn1 = document.querySelector('#calBtn1');
 const calBtn2 = document.querySelector('#calBtn2');
 const calBtn3 = document.querySelector('#calBtn3');
@@ -24,12 +24,23 @@ calBtnAllClear.addEventListener('click', () => {
 // An empty array to push numbers or operators as separate items
 const currentValueArr = [];
 
+// Function to output the functionality of each button on a separate line
 const btnArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9];
 
 btnArr.forEach(btn => btn.addEventListener('click', event => {
+
+    // output numbers onto the screen
     currentValueArr.push(event.target.value);
     const currentValue = currentValueArr.join('');
     calResult.innerHTML = `${currentValue}`;
+
+    // change the numbers on the screen into a percentage
+    calBtnPercentage.addEventListener('click', () => {
+        const currentValuePercentage = currentValue * 0.01;
+        calResult.innerHTML = `${currentValuePercentage}`;
+    });
+
+    
 }));
 
 
