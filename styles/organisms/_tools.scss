@@ -11,6 +11,8 @@
 
   &__result {
     text-align: right;
+    overflow: hidden;
+    direction: rtl;
   }
 
   &__btn-container {

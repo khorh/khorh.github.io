@@ -516,6 +516,8 @@ a:active {
 }
 .cal__result {
   text-align: right;
+  overflow: hidden;
+  direction: rtl;
 }
 .cal__btn-container {
   display: flex;
