@@ -4,7 +4,9 @@
 // Calculator buttons
 const calResult = document.querySelector('#calResult');
 const calBtnAllClear = document.querySelector('#calBtnAllClear');
+const calBtnPlusMinus = document.querySelector('#calBtnPlusMinus');
 const calBtnPercentage = document.querySelector('#calBtnPercentage');
+const calBtn0 = document.querySelector('#calBtn0');
 const calBtn1 = document.querySelector('#calBtn1');
 const calBtn2 = document.querySelector('#calBtn2');
 const calBtn3 = document.querySelector('#calBtn3');
@@ -14,36 +16,76 @@ const calBtn6 = document.querySelector('#calBtn6');
 const calBtn7 = document.querySelector('#calBtn7');
 const calBtn8 = document.querySelector('#calBtn8');
 const calBtn9 = document.querySelector('#calBtn9');
+const calBtnDot = document.querySelector('#calBtnDot');
+const calBtnPlus = document.querySelector('#calBtnPlus');
+const calBtnMinus = document.querySelector('#calBtnMinus');
+const calBtnMultiply = document.querySelector('#calBtnMultiply');
+const calBtnDivide = document.querySelector('#calBtnDivide');
 
 // An empty array to push numbers or operators as separate items
 let currentValueArr = [];
+console.log(currentValueArr);
 
-// Function to output the functionality of each button on a separate line
-const btnArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9];
+// All clear functionality - resets to zero on the screen
+calBtnAllClear.addEventListener('click', () => {
+    currentValueArr = [];
+    calResult.innerText = 0;
+    // console.log(typeof calResult.innerHTML);
+    calBtnAllClear.innerHTML = `AC`;
+});
 
-btnArr.forEach(btn => btn.addEventListener('click', event => {
+// Number functionality - output each number into array and then a number
+const btnNumArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9, calBtn0];
 
+btnNumArr.forEach(btn => btn.addEventListener('click', event => {
     // output numbers onto the screen
     currentValueArr.push(event.target.value);
     const currentValue = currentValueArr.join('');
-    calResult.innerHTML = `${currentValue}`;
+    // console.log(currentValue);
+    calResult.innerText = currentValue;
+    // console.log(calResult.innerText);
     calBtnAllClear.innerHTML = `C`;
-
-    // all clear functionality - resets to zero on the screen
-    calBtnAllClear.addEventListener('click', () => {
-        currentValueArr = [];
-        calResult.innerHTML = `0`;
-        calBtnAllClear.innerHTML = `AC`;
-    });
-
-    // percentage functionality - changes the numbers on the screen into a percentage
-    calBtnPercentage.addEventListener('click', () => {
-        const currentValuePercentage = currentValue * 0.01;
-        calResult.innerHTML = `${currentValuePercentage}`;
-    });
-
-
 }));
+
+// Dot functionality - insert dot into array and as a number then check that the array cannot have two dots
+calBtnDot.addEventListener('click', (event) => {
+    if (currentValueArr.includes('.') === false) {
+        currentValueArr.push(event.target.value);
+        const currentValue = currentValueArr.join('');
+        calResult.innerText = currentValue;
+    }
+});
+
+// const btnMathArr = [calBtnPlus, calBtnMinus, calBtnMultiply, calBtnDivide];
+//
+// btnMathArr.forEach(btn => btn.addEventListener('click', event => {
+//     // output numbers onto the screen
+//     currentValueArr.push(event.target.value);
+//     const currentValue = Number(currentValueArr.join(''));
+//     calResult.innerText = currentValue;
+//     calBtnAllClear.innerHTML = `C`;
+// }));
+
+// Positive or negative functionality - changes the numbers on the screen between positive or negative
+calBtnPlusMinus.addEventListener('click', () => {
+    const currentValue = currentValueArr.join('');
+    const currentValuePlusMinus = currentValue * -1;
+    currentValueArr = [currentValuePlusMinus];
+    // console.log(currentValuePlusMinus);
+    calResult.innerText = currentValuePlusMinus;
+});
+
+
+// Percentage functionality - changes the numbers on the screen into a percentage
+calBtnPercentage.addEventListener('click', () => {
+    const currentValue = Number(currentValueArr.join(''));
+    const currentValuePercentage = currentValue * 0.01;
+    currentValueArr = [currentValuePercentage];
+    // console.log(typeof currentValuePercentage);
+    calResult.innerText = currentValuePercentage;
+});
+
+
 
 
 // Loan calculator
