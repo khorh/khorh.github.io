@@ -23,65 +23,72 @@ const calBtnMultiply = document.querySelector('#calBtnMultiply');
 const calBtnDivide = document.querySelector('#calBtnDivide');
 
 // An empty array to push numbers or operators as separate items
-let currentValueArr = [];
-console.log(currentValueArr);
+let calCurrentArr = [];
+console.log(calCurrentArr);
 
 // All clear functionality - resets to zero on the screen
 calBtnAllClear.addEventListener('click', () => {
-    currentValueArr = [];
+    calCurrentArr = [];
     calResult.innerText = 0;
-    // console.log(typeof calResult.innerHTML);
     calBtnAllClear.innerHTML = `AC`;
 });
+
+// print to screen
+const printResults = () => {
+    const calJoinArr = calCurrentArr.join('');
+    calResult.innerText = calJoinArr;
+}
 
 // Number functionality - output each number into array and then a number
 const btnNumArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9, calBtn0];
 
 btnNumArr.forEach(btn => btn.addEventListener('click', event => {
-    // output numbers onto the screen
-    currentValueArr.push(event.target.value);
-    const currentValue = currentValueArr.join('');
-    // console.log(currentValue);
-    calResult.innerText = currentValue;
-    // console.log(calResult.innerText);
+    calCurrentArr.push(Number(event.target.value));
+    printResults();
     calBtnAllClear.innerHTML = `C`;
 }));
 
-// Dot functionality - insert dot into array and as a number then check that the array cannot have two dots
+// Dot functionality - check if there is already a dot, if not, push into array
 calBtnDot.addEventListener('click', (event) => {
-    if (currentValueArr.includes('.') === false) {
-        currentValueArr.push(event.target.value);
-        const currentValue = currentValueArr.join('');
-        calResult.innerText = currentValue;
+    if (calCurrentArr.length === 0) {
+        calCurrentArr.push(0, event.target.value);
+        printResults();
+    } else if (calCurrentArr.length > 0 && calCurrentArr.includes('.') === false) {
+        calCurrentArr.push(event.target.value);
+        printResults();
     }
 });
 
-// const btnMathArr = [calBtnPlus, calBtnMinus, calBtnMultiply, calBtnDivide];
-//
-// btnMathArr.forEach(btn => btn.addEventListener('click', event => {
-//     // output numbers onto the screen
-//     currentValueArr.push(event.target.value);
-//     const currentValue = Number(currentValueArr.join(''));
-//     calResult.innerText = currentValue;
-//     calBtnAllClear.innerHTML = `C`;
-// }));
+// Math operator functionality
+const btnMathArr = [calBtnPlus, calBtnMinus, calBtnMultiply, calBtnDivide];
+
+btnMathArr.forEach(btn => btn.addEventListener('click', event => {
+    const calLastValueArr = calCurrentArr[calCurrentArr.length - 1];
+    if (calCurrentArr.length > 0 && calLastValueArr === '.' || calLastValueArr === '+' || calLastValueArr === '−' || calLastValueArr === '×' || calLastValueArr === '÷') {
+        calCurrentArr.pop();
+        calCurrentArr.push(event.target.value);
+        printResults();
+    }
+    else if (calCurrentArr.length > 0 && calLastValueArr !== '+' &&  calLastValueArr !== '−' && calLastValueArr !== '×' && calLastValueArr !== '÷') {
+        calCurrentArr.push(event.target.value);
+        printResults()
+    }
+}));
+
 
 // Positive or negative functionality - changes the numbers on the screen between positive or negative
 calBtnPlusMinus.addEventListener('click', () => {
-    const currentValue = currentValueArr.join('');
+    const currentValue = calCurrentArr.join('');
     const currentValuePlusMinus = currentValue * -1;
-    currentValueArr = [currentValuePlusMinus];
-    // console.log(currentValuePlusMinus);
+    calCurrentArr = [currentValuePlusMinus];
     calResult.innerText = currentValuePlusMinus;
 });
 
-
 // Percentage functionality - changes the numbers on the screen into a percentage
 calBtnPercentage.addEventListener('click', () => {
-    const currentValue = Number(currentValueArr.join(''));
+    const currentValue = calCurrentArr.join('');
     const currentValuePercentage = currentValue * 0.01;
-    currentValueArr = [currentValuePercentage];
-    // console.log(typeof currentValuePercentage);
+    calCurrentArr = [currentValuePercentage];
     calResult.innerText = currentValuePercentage;
 });
 
