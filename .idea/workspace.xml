@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1628610131430" duration="18442000" />
       <workItem from="1628689080343" duration="81823000" />
       <workItem from="1629356474869" duration="628000" />
-      <workItem from="1629451089821" duration="48773000" />
+      <workItem from="1629451089821" duration="49284000" />
     </task>
     <servers />
   </component>
@@ -131,6 +130,12 @@
           <url>file://$PROJECT_DIR$/games.js</url>
           <line>28</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tools.js</url>
+          <line>75</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

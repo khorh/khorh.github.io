@@ -43,7 +43,12 @@ const printResults = () => {
 const btnNumArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7, calBtn8, calBtn9, calBtn0];
 
 btnNumArr.forEach(btn => btn.addEventListener('click', event => {
-    calCurrentArr.push(Number(event.target.value));
+    if (calCurrentArr.length === 1 && calCurrentArr[0] === 0) {
+       calCurrentArr.pop();
+        calCurrentArr.push(Number(event.target.value));
+    } else {
+        calCurrentArr.push(Number(event.target.value));
+    }
     printResults();
     calBtnAllClear.innerHTML = `C`;
 }));
