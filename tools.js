@@ -21,6 +21,8 @@ const calBtnPlus = document.querySelector('#calBtnPlus');
 const calBtnMinus = document.querySelector('#calBtnMinus');
 const calBtnMultiply = document.querySelector('#calBtnMultiply');
 const calBtnDivide = document.querySelector('#calBtnDivide');
+const calBtnEqual = document.querySelector('#calBtnEqual');
+
 
 // An empty array to push numbers or operators as separate items
 let calCurrentArr = [];
@@ -36,6 +38,7 @@ calBtnAllClear.addEventListener('click', () => {
 // print to screen
 const printResults = () => {
     const calJoinArr = calCurrentArr.join('');
+    console.log(typeof calJoinArr);
     calResult.innerText = calJoinArr;
 }
 
@@ -44,7 +47,7 @@ const btnNumArr = [calBtn1, calBtn2, calBtn3, calBtn4, calBtn5, calBtn6, calBtn7
 
 btnNumArr.forEach(btn => btn.addEventListener('click', event => {
     if (calCurrentArr.length === 1 && calCurrentArr[0] === 0) {
-       calCurrentArr.pop();
+        calCurrentArr.pop();
         calCurrentArr.push(Number(event.target.value));
     } else {
         calCurrentArr.push(Number(event.target.value));
@@ -80,6 +83,18 @@ btnMathArr.forEach(btn => btn.addEventListener('click', event => {
     }
 }));
 
+// Equal operator functionality
+calBtnEqual.addEventListener('click', (event) => {
+    const calLastValueArr = calCurrentArr[calCurrentArr.length - 1];
+    if (calCurrentArr.length > 0 && calLastValueArr === '.' || calLastValueArr === '+' || calLastValueArr === '−' || calLastValueArr === '×' || calLastValueArr === '÷') {
+        calCurrentArr.pop();
+        const stringToNumber = Number(calCurrentArr.join(''));
+        console.log(stringToNumber);
+    } else {
+        const stringToNumber = parseInt(calCurrentArr.join(''));
+        console.log(stringToNumber);
+    }
+});
 
 // Positive or negative functionality - changes the numbers on the screen between positive or negative
 calBtnPlusMinus.addEventListener('click', () => {
@@ -96,8 +111,6 @@ calBtnPercentage.addEventListener('click', () => {
     calCurrentArr = [currentValuePercentage];
     calResult.innerText = currentValuePercentage;
 });
-
-
 
 
 // Loan calculator
