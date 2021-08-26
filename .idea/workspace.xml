@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/styles/atoms/_animation__typewriter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animations.html" beforeDir="false" afterPath="$PROJECT_DIR$/animations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charity.html" beforeDir="false" afterPath="$PROJECT_DIR$/charity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/games-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other.html" beforeDir="false" afterPath="$PROJECT_DIR$/more.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/atoms/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools.js" afterDir="false" />
     </list>
@@ -102,7 +113,8 @@
       <workItem from="1628610131430" duration="18442000" />
       <workItem from="1628689080343" duration="81823000" />
       <workItem from="1629356474869" duration="628000" />
-      <workItem from="1629451089821" duration="57738000" />
+      <workItem from="1629451089821" duration="61497000" />
+      <workItem from="1629918416240" duration="4800000" />
     </task>
     <servers />
   </component>
