@@ -1,0 +1,18 @@
+/* icon */
+.icon-shark {
+  width: 64px;
+  position: relative;
+  animation: swim 7s infinite;
+}
+
+@keyframes swim {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 30%;
+  }
+  100% {
+    left: 100%;
+  }
+}

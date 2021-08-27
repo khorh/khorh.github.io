@@ -6,7 +6,7 @@
   font-weight: 500;
   line-height: 0.5625rem;
   padding: 8px 16px;
-  border: 1px solid $primary-dark-color;
+  border: 1px solid $color-primary-dark;
   border-radius: 4px;
   cursor: pointer;
 
@@ -19,22 +19,22 @@
   }
 
   &:disabled {
-    color: $primary-dark-color;
+    color: $color-primary-dark;
   }
 
   &--state--default {
-    background-color: $generic-color;
+    background-color: $color-base;
   }
 
   &--state--positive {
-    background-color: $quaternary-light-color;
+    background-color: $color-quaternary-light;
   }
 
   &--state--neutral {
-    background-color: $tertiary-light-color;
+    background-color: $color-tertiary-light;
   }
 
   &--state--negative {
-    background-color: $secondary-light-color;
+    background-color: $color-secondary-light;
   }
 }

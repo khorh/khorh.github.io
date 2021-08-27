@@ -1,0 +1,7 @@
+@use "../abstracts/index" as *;
+
+/* divider */
+.divider {
+  border-bottom: 3px solid $color-base;
+  margin-bottom: 32px;
+}

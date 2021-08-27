@@ -3,7 +3,7 @@
 /* about */
 .about-header {
   display: flex;
-  background-color: $primary-light-color;
+  background-color: $color-primary-light;
 
   @include sm-screen {
     flex-direction: column-reverse;
@@ -56,17 +56,17 @@
     }
 
     &:nth-child(1) {
-      border-left: 2px solid $primary-light-color;
-      border-bottom: 2px solid $primary-light-color;
+      border-left: 2px solid $color-primary-light;
+      border-bottom: 2px solid $color-primary-light;
 
       @include sm-screen {
         border-bottom: none;
-        border-right: 2px solid $primary-light-color;
+        border-right: 2px solid $color-primary-light;
       }
     }
 
     &:nth-child(2) {
-      background-color: $tertiary-light-color;
+      background-color: $color-tertiary-light;
     }
   }
 

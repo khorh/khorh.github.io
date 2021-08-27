@@ -5,9 +5,9 @@
   width: 208px;
   height: 288px;
   padding: 16px;
-  border: 1px solid $primary-dark-color;
+  border: 1px solid $color-primary-dark;
   border-radius: 16px;
-  background-color: $generic-color;
+  background-color: $color-base;
 
   &__result {
     text-align: right;
@@ -27,7 +27,7 @@
     font-size: 0.4375rem;
     font-weight: 500;
     line-height: 0.5625rem;
-    border: 1px solid $primary-dark-color;
+    border: 1px solid $color-primary-dark;
     margin: 4px;
     cursor: pointer;
 
@@ -46,19 +46,19 @@
     }
 
     &--state--number {
-      background-color: $generic-color;
+      background-color: $color-base;
     }
 
     &--state--all-clear {
-      background-color: $secondary-light-color;
+      background-color: $color-secondary-light;
     }
 
     &--state--math {
-      background-color: $tertiary-light-color;
+      background-color: $color-tertiary-light;
     }
 
     &--state--equals {
-      background-color: $quaternary-light-color;
+      background-color: $color-quaternary-light;
     }
   }
 }

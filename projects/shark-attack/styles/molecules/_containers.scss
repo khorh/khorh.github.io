@@ -1,0 +1,41 @@
+@use "../abstracts/index" as *;
+
+/* containers */
+.chart-container {
+  width: 70vw;
+
+  @include sm-screen {
+    width: 100vw;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.header-container {
+  margin: 64px 0 32px;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+.list-container {
+  width: 30vw;
+  margin: 16px;
+
+  @include sm-screen {
+    width: 100vw;
+  }
+}
+
+.section-container {
+  display: flex;
+
+  @include sm-screen {
+    flex-direction: column;
+  }
+}

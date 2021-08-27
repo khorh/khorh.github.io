@@ -55,14 +55,14 @@ li {
 a {
   font-size: 0.5rem;
   font-weight: 500;
-  color: $primary-main-color;
+  color: $color-primary-main;
   text-decoration: none;
 
   &:hover {
-    color: $secondary-main-color;
+    color: $color-secondary-main;
   }
 
   &:active {
-    color: $secondary-dark-color;
+    color: $color-secondary-dark;
   }
 }

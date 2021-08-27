@@ -6,13 +6,13 @@
   font-size: 0.4375rem;
   font-weight: 500;
   line-height: 0.5625rem;
-  background-color: $generic-color;
+  background-color: $color-base;
   padding: 8px 16px;
-  border: 1px solid $primary-dark-color;
+  border: 1px solid $color-primary-dark;
   border-radius: 4px;
 
   &[type=text]:disabled {
-    color: $primary-dark-color;
+    color: $color-primary-dark;
   }
 
   &[type=number] {
@@ -20,6 +20,6 @@
   }
 
   &[type=number]:disabled {
-    color: $primary-dark-color;
+    color: $color-primary-dark;
   }
 }

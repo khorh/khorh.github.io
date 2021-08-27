@@ -1,3 +1,5 @@
+/* font-families */
+/* colors */
 /* animation - typewriter */
 .typewriter {
   overflow: hidden;
@@ -105,7 +107,7 @@
 }
 
 /* list */
-.list {
+.list-container {
   padding-left: 32px;
   margin: 0;
 }
@@ -381,12 +383,12 @@ a:active {
 }
 
 /* header */
-.header {
+.header-container {
   border-left: 4px solid #c72F58;
   padding-left: 16px;
   margin-bottom: 64px;
 }
-.header h2 {
+.header-container h2 {
   line-height: 0.75rem;
 }
 

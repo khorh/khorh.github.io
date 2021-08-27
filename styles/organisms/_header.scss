@@ -1,8 +1,8 @@
 @use '../abstracts' as *;
 
 /* header */
-.header {
-  border-left: 4px solid $secondary-dark-color;
+.header-container {
+  border-left: 4px solid $color-secondary-dark;
   padding-left: 16px;
   margin-bottom: 64px;
 

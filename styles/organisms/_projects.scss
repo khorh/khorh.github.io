@@ -57,11 +57,11 @@
     }
 
     &--color--filled {
-      background-color: $primary-light-color;
+      background-color: $color-primary-light;
     }
 
     &--color--outlined {
-      border: 2px solid $primary-light-color;
+      border: 2px solid $color-primary-light;
     }
 
     &--alignment--left {
