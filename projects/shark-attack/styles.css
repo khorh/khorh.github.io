@@ -1,19 +1,144 @@
-/* Error: There's already a module with namespace "index".
- *   ,
- * 2 | @use "styles/atoms/index";
- *   | ========================= original @use
- * 3 | @use "styles/molecules/index";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use
- *   '
- *   styles.scss 3:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: There's already a module with namespace \"index\".\a   \2577 \a 2 \2502  @use \"styles/atoms/index\";\a   \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a 3 \2502  @use \"styles/molecules/index\";\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @use\a   \2575 \a   styles.scss 3:1  root stylesheet";
+/* font-families */
+/* colors */
+/* chart item */
+.chart-item {
+  margin: 0 32px 32px 0;
+  padding: 16px;
+  background-color: #ffffff;
 }
+
+/* divider */
+.divider {
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 32px;
+}
+
+/* icon */
+.icon-shark {
+  width: 64px;
+  position: relative;
+  animation: swim 7s infinite;
+}
+
+@keyframes swim {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/* list item */
+.list-item {
+  margin-bottom: 16px;
+}
+
+/* logo */
+.logo-shark {
+  width: 64px;
+}
+
+/* typography */
+h1, h2, p, a, li {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Bilbo", cursive;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  margin-bottom: 16px;
+}
+
+a {
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+}
+
+/* containers */
+.chart-container {
+  width: 70vw;
+}
+@media (max-width: 767px) {
+  .chart-container {
+    width: 100vw;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.header-container {
+  margin: 64px 0 32px;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+.list-container {
+  width: 30vw;
+  margin: 16px;
+}
+@media (max-width: 767px) {
+  .list-container {
+    width: 100vw;
+  }
+}
+
+.section-container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .section-container {
+    flex-direction: column;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 32px;
+  background-color: #002f6c;
+}
+
+/*# sourceMappingURL=styles.css.map */
