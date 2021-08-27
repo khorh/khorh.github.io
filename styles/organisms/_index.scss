@@ -1,6 +1,6 @@
-@use 'animations';
-@use 'games';
-@use 'header';
-@use 'navigation';
-@use 'projects';
-@use 'tools';
+@forward "animations";
+@forward "games";
+@forward "header";
+@forward "navigation";
+@forward "projects";
+@forward "tools";
