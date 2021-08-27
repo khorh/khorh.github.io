@@ -33,7 +33,7 @@
     left: 30%;
   }
   100% {
-    left: 100%;
+    left: 85%;
   }
 }
 /* list item */
@@ -47,7 +47,7 @@
 }
 
 /* typography */
-h1, h2, p, a, li {
+h1, h2, h3, p, a, li {
   margin: 0;
 }
 
@@ -61,6 +61,13 @@ h2 {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.125rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 0.9375rem;
   margin-bottom: 16px;
 }
 
