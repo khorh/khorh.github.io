@@ -2,10 +2,10 @@
 
 /* containers */
 .chart-container {
-  width: 70vw;
+  width: 70%;
 
   @include sm-screen {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -24,11 +24,11 @@
 }
 
 .list-container {
-  width: 30vw;
+  width: 30%;
   margin: 16px;
 
   @include sm-screen {
-    width: 100vw;
+    width: 100%;
   }
 }
 

@@ -6,6 +6,11 @@
   padding: 16px;
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .chart-item {
+    margin: 0;
+  }
+}
 
 /* divider */
 .divider {
@@ -81,11 +86,11 @@ li {
 
 /* containers */
 .chart-container {
-  width: 70vw;
+  width: 70%;
 }
 @media (max-width: 767px) {
   .chart-container {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -104,12 +109,12 @@ li {
 }
 
 .list-container {
-  width: 30vw;
+  width: 30%;
   margin: 16px;
 }
 @media (max-width: 767px) {
   .list-container {
-    width: 100vw;
+    width: 100%;
   }
 }
 
