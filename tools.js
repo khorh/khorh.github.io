@@ -23,7 +23,6 @@ const calBtnMultiply = document.querySelector('#calBtnMultiply');
 const calBtnDivide = document.querySelector('#calBtnDivide');
 const calBtnEqual = document.querySelector('#calBtnEqual');
 
-
 // An empty array to push numbers or operators as separate items
 let calCurrentArr = [];
 console.log(calCurrentArr);
@@ -113,7 +112,7 @@ calBtnPercentage.addEventListener('click', () => {
 });
 
 
-// Loan calculator
+// Loan games-coin-toss
 
 // Calculate loan
 document.getElementById('calculateLoan').addEventListener('click', () => {
@@ -160,7 +159,7 @@ document.getElementById('calculateLoan').addEventListener('click', () => {
     document.getElementById('lastRepaymentAmount').innerHTML = `${lastRepaymentAmount}`;
 });
 
-// Reset loan calculator
+// Reset loan games-coin-toss
 document.getElementById('resetLoanCal').addEventListener('click', () => {
     document.getElementById('loan').value = '';
     document.getElementById('salary').value = '25000';
@@ -173,7 +172,7 @@ let mobNames = [];
 // Mob pro - Whose next button is disabled in the first instance
 document.getElementById('nextMobName').disabled = true;
 
-// Mob pro - Add names to the _list.scss
+// Mob pro - Add names to the _list-container.scss
 document.getElementById('addMobButton').addEventListener('click', () => {
     const getMobName = document.getElementById('addMobName').value;
     mobNames.push(getMobName);
