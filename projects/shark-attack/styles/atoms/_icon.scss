@@ -2,17 +2,44 @@
 .icon-shark {
   width: 64px;
   position: relative;
-  animation: swim 7s infinite;
+  animation: swim 7s infinite linear;
 }
 
 @keyframes swim {
   0% {
     left: 0%;
+    transform: rotate(5deg);
+  }
+  10% {
+    left: 10%;
+    transform: rotate(10deg);
+  }
+  20% {
+    left: 20%;
+    transform: rotate(15deg);
   }
   30% {
     left: 30%;
+    transform: rotate(20deg);
+  }
+  40% {
+    left: 40%;
+    transform: rotate(15deg);
+  }
+  50% {
+    left: 50%;
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+    left: 60%;
+  }
+  80% {
+    transform: rotate(330deg);
+    left: 80%;
   }
   100% {
-    left: 85%;
+    transform: rotate(360deg);
+    left: 100%;
   }
 }
