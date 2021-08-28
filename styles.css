@@ -106,12 +106,6 @@
   color: #8e8e8e;
 }
 
-/* list */
-.list-container {
-  padding-left: 32px;
-  margin: 0;
-}
-
 /* tag */
 .tag {
   font-size: 0.4375rem;
@@ -215,6 +209,12 @@ a:active {
   flex-direction: column;
   height: 196px;
   margin-bottom: 16px;
+}
+
+/* list */
+.list-container {
+  padding-left: 32px;
+  margin: 0;
 }
 
 /* tag-container */

@@ -157,8 +157,6 @@ const displayRoshamboResult = (outcomePlayerSelection, outcomeComputerSelection)
 
 const displayCountdownWhack = (countdownWhack) => {
     setInterval(() => {
-        // Start
-        document.getElementById('startWhack').disabled = false;
 
         // Countdown
         countdownWhack--;

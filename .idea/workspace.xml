@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/abstracts/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/abstracts/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/abstracts/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_chart-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_list-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_logo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/atoms/_typo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/molecules/_containers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/more/shark-attack/styles/molecules/_index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/games-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_divider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_input__field-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_input__field-type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_tag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_tag.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_typo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_underline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_underline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/organisms/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_animations.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/organisms/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/organisms/_projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_projects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/organisms/_tools.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/organisms/_tools.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/pages/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/_about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,11 +61,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/molecules" />
       <recent name="$PROJECT_DIR$/projects" />
       <recent name="$PROJECT_DIR$/styles/abstracts" />
       <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/styles/organisms" />
-      <recent name="$PROJECT_DIR$/styles/atoms" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -137,7 +108,8 @@
       <workItem from="1628689080343" duration="81823000" />
       <workItem from="1629356474869" duration="628000" />
       <workItem from="1629451089821" duration="61497000" />
-      <workItem from="1629918416240" duration="32975000" />
+      <workItem from="1629918416240" duration="39699000" />
+      <workItem from="1630136315645" duration="1136000" />
     </task>
     <servers />
   </component>
