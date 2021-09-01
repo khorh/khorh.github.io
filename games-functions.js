@@ -1,59 +1,5 @@
 // Games using functional programming
 
-/**
- * Coin toss function to display every click of the Toss! button
- * @param {number} totalTosses which is the total number of tosses
- * @returns {string} displays the total number of tosses
- */
-const displayTotalTosses = (totalTosses) => {
-    document.getElementById('totalTosses').innerHTML = `${totalTosses}`;
-}
-
-/**
- * Coin toss function to display the image based on the randomise number of 1 and 2
- * @param {number} coinToss which is the random number of either 1 or 2
- * @returns {string} displays the image of a Peter or Benjamin 50p coin
- */
-const displayToss = (coinToss) => {
-    if (coinToss === 1) {
-        document.querySelector('#coinTossImage').setAttribute('src', 'images/games/coin-toss-peter.png');
-        document.querySelector('#coinTossImage').setAttribute('alt', 'peter rabbit 50p coin');
-    } else if (coinToss === 2) {
-        document.querySelector('#coinTossImage').setAttribute('src','images/games/coin-toss-benjamin.png');
-        document.querySelector('#coinTossImage').setAttribute('alt', 'benjamin rabbit 50p coin');
-    }
-}
-
-/**
- * Coin toss function to add and display the counts of Peter and Benjamin
- * @param {number} coinToss which is the random number of either 1 or 2
- * @returns {string} displays the counts for Peter and Benjamin
- */
-const displayCount = (coinToss) => {
-    if (coinToss === 1) {
-        numberOfPeter += 1;
-        document.getElementById('totalPeter').innerHTML = `${numberOfPeter}`;
-    } else if (coinToss === 2) {
-        numberOfBenjamin +=1;
-        document.getElementById('totalBenjamin').innerHTML = `${numberOfBenjamin}`;
-    }
-}
-
-/**
- * Coin toss function to calculate and display the probability of Peter and Benjamin
- * @param {number} totalTosses which is the total number of tosses
- * @returns {string} displays the probabilities of Peter and Benjamin
- */
-const displayProbability = (totalTosses) => {
-    const calculatePeter = (numberOfPeter/totalTosses)*100;
-    const percentagePeter = calculatePeter.toFixed(0);
-    document.getElementById('percentagePeter').innerHTML = `${percentagePeter}%`;
-
-    const calculateBenjamin = (numberOfBenjamin/totalTosses)*100;
-    const percentageBenjamin = calculateBenjamin.toFixed(0);
-    document.getElementById('percentageBenjamin').innerHTML = `${percentageBenjamin}%`;
-}
-
 // Roshambo
 /**
  * Roshambo function to turn a randomised number into a string for the player's selection
