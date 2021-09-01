@@ -1,3 +1,6 @@
 [submodule "analytics-shark-attack"]
 	path = analytics-shark-attack
 	url = https://github.com/khorh/analytics-shark-attack
+[submodule "games-coin-toss"]
+	path = games-coin-toss
+	url = https://github.com/khorh/games-coin-toss
