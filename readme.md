@@ -7,16 +7,13 @@ My portfolio is built using **HTML**, **CSS** (SASS/SCSS) and **Javascript**.  T
 The portfolio's information architecture is as follows:
 
 **Home**
-- Home contains key projects from my portfolio.
+- Home contains featured projects from my portfolio.
 
-**Projects**
-- 'Projects' contains all my personal and bootcamp projects.
+**Websites, Games and Tools**
+- These three sections contain personal and bootcamp projects.
 
-**Other**
-- 'Other' contains other projects:
-  - fun stuff including games and animations,
-  - charitable work, and
-  - practical tools.
+**More...**
+- This section contains fun stuff including animations, and charitable work.
 
 **About**
 - 'About' contains an extract of my CV which includes my work experiences, academic qualifications and skills in technical development, user experience (UX) and product management.
