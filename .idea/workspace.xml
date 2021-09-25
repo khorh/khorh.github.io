@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="be708e61-2a9c-4a33-bf61-5e957db1b597" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more.html" beforeDir="false" afterPath="$PROJECT_DIR$/more.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/projects/parking-scout.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/games/parking-scout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/projects/scrumble.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/games/scrumble.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websites.html" beforeDir="false" afterPath="$PROJECT_DIR$/websites.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +63,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/games" />
       <recent name="$PROJECT_DIR$/styles/molecules" />
       <recent name="$PROJECT_DIR$/projects" />
       <recent name="$PROJECT_DIR$/styles/abstracts" />
       <recent name="$PROJECT_DIR$/styles" />
-      <recent name="$PROJECT_DIR$/styles/organisms" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,7 +118,7 @@
       <workItem from="1630653780354" duration="3162000" />
       <workItem from="1630826148783" duration="129000" />
       <workItem from="1631034404442" duration="3608000" />
-      <workItem from="1632562742118" duration="3466000" />
+      <workItem from="1632562742118" duration="4433000" />
     </task>
     <servers />
   </component>
