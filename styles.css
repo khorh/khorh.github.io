@@ -60,7 +60,12 @@
 /* divider */
 .divider {
   border: 1px solid #f5f5f5;
+}
+.divider--header {
   margin-bottom: 96px;
+}
+.divider--paragraph {
+  margin: 32px 0;
 }
 
 /* icon */
@@ -618,6 +623,7 @@ a:active {
 
 .about-main {
   display: flex;
+  margin-bottom: 96px;
 }
 @media (max-width: 767px) {
   .about-main {
@@ -667,5 +673,3 @@ body {
   padding: 0 32px;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=styles.css.map */

@@ -3,5 +3,12 @@
 /* divider */
 .divider {
   border: 1px solid $color-primary-light;
-  margin-bottom: 96px;
+
+   &--header {
+    margin-bottom: 96px;
+   }
+
+   &--paragraph {
+    margin: 32px 0;
+   }
 }
